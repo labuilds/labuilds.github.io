@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lakshya Agarwal</title>
+  <meta name="description" content="Lakshya Agarwal — Software builder, UBC Computer Science graduate, iOS developer. Currently in India, previously Vancouver for 4.5 years.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (savedTheme === 'dark' || (!savedTheme && prefersDark) || window.location.search.includes('dark')) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    })();
+  </script>
+  <style>
+    ::selection {
+      background: #18181b;
+      color: #fafafa;
+    }
+    .dark ::selection {
+      background: #fafafa;
+      color: #18181b;
+    }
+    /* Lockstep smooth transition across background, borders, text, and SVG fills */
+    html.theme-transition,
+    html.theme-transition *,
+    html.theme-transition *::before,
+    html.theme-transition *::after {
+      transition: background-color 220ms ease,
+                  border-color 220ms ease,
+                  color 220ms ease,
+                  text-decoration-color 220ms ease,
+                  fill 220ms ease,
+                  stroke 220ms ease !important;
+      transition-delay: 0s !important;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      letter-spacing: -0.011em;
+      font-size: 16px;
+      line-height: 1.7;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    h1, h2, h3, .font-heading {
+      letter-spacing: -0.022em;
+    }
+    a.link {
+      text-decoration: underline;
+      text-decoration-color: #cbd5e1;
+      text-underline-offset: 4px;
+      transition: all 0.15s ease;
+    }
+    a.link:hover {
+      text-decoration-color: #09090b;
+    }
+    .dark a.link {
+      text-decoration-color: #4b5563;
+    }
+    .dark a.link:hover {
+      text-decoration-color: #f3f4f6;
+    }
+    .arrow-link::after {
+      content: " ↗";
+      font-size: 0.82em;
+      opacity: 0.65;
+      transition: opacity 0.15s ease;
+    }
+    a:hover .arrow-link::after,
+    a.arrow-link:hover::after {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col bg-white dark:bg-[#0e1015] text-zinc-900 dark:text-zinc-100 antialiased">
+
+  <!-- TOP NAV -->
+  <header class="border-b border-zinc-200 dark:border-zinc-800">
+    <div class="mx-auto max-w-2xl px-5 py-5 flex items-center justify-between">
+      <a href="/" class="text-base font-semibold tracking-tight text-zinc-950 dark:text-white">
+        Lakshya Agarwal
+      </a>
+
+      <div class="flex items-center gap-5 text-sm">
+        <a href="https://github.com/labuilds" target="_blank" rel="noopener noreferrer" class="text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition">GitHub</a>
+        <a href="https://apps.apple.com/app/focus-space-task-timer/id6792886499" target="_blank" rel="noopener noreferrer" class="text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition">App Store</a>
+        <a href="https://www.linkedin.com/in/lakshya01/" target="_blank" rel="noopener noreferrer" class="text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition">LinkedIn</a>
+        <a href="https://x.com/labuilds" target="_blank" rel="noopener noreferrer" class="text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition">𝕏</a>
+        
+        <!-- THEME TOGGLE -->
+        <button onclick="toggleTheme()" class="relative w-7 h-7 flex items-center justify-center rounded-md text-zinc-500 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-white cursor-pointer" aria-label="Toggle Theme">
+          <svg id="themeIconSun" class="w-4 h-4 absolute transition-all duration-300 transform rotate-90 scale-0 opacity-0 dark:rotate-0 dark:scale-100 dark:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg id="themeIconMoon" class="w-4 h-4 absolute transition-all duration-300 transform rotate-0 scale-100 opacity-100 dark:-rotate-90 dark:scale-0 dark:opacity-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="flex-grow">
+    <div class="mx-auto max-w-2xl px-5 py-10 sm:py-14 space-y-10">
+
+      <!-- HEADER BLOCK -->
+      <section class="space-y-3">
+        <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-950 dark:text-white">
+          Lakshya Agarwal
+        </h1>
+        <p class="text-[14.5px] text-zinc-600 dark:text-zinc-300 flex flex-wrap items-center gap-x-2 gap-y-1">
+          <span>Currently in India</span>
+          <span>•</span>
+          <span>Previously Vancouver for 4.5 years</span>
+          <span>•</span>
+          <span>UBC Comp Sci ('23)</span>
+        </p>
+      </section>
+
+      <!-- SUMMARY -->
+      <section class="space-y-3 pt-6 border-t border-zinc-200 dark:border-zinc-800">
+        <p class="text-base font-semibold text-zinc-950 dark:text-white">
+          Hi, I'm Lakshya.
+        </p>
+
+        <ul class="text-[15.5px] text-zinc-800 dark:text-zinc-200 space-y-3 leading-relaxed">
+          <li class="flex items-start gap-2.5">
+            <span class="text-zinc-400 dark:text-zinc-500 text-xs mt-1.5 shrink-0">•</span>
+            <span>Currently working on <a href="https://apps.apple.com/app/focus-space-task-timer/id6792886499" target="_blank" rel="noopener noreferrer" class="link font-medium text-zinc-950 dark:text-white arrow-link">Focus Space: Task & Timer</a>, a native iOS Pomodoro app live on the Apple App Store.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="text-zinc-400 dark:text-zinc-500 text-xs mt-1.5 shrink-0">•</span>
+            <span>Built <a href="https://github.com/labuilds/quotecatch" target="_blank" rel="noopener noreferrer" class="link font-medium text-zinc-950 dark:text-white arrow-link">QuoteCatch</a>, an instant roofing estimator tool that uses satellite imagery and spatial data to estimate roofing costs for roofers, backed by a 33k-record ETL pipeline.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="text-zinc-400 dark:text-zinc-500 text-xs mt-1.5 shrink-0">•</span>
+            <span>Built an <a href="https://www.canva.com/design/DAHYP9L_pSQ/3hMQcbylcldCGDPMOGz_1w/edit" target="_blank" rel="noopener noreferrer" class="link font-medium text-zinc-950 dark:text-white arrow-link">AI content marketing system</a> to automate TikTok video generation (2nd place, Mosaic Buildathon).</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="text-zinc-400 dark:text-zinc-500 text-xs mt-1.5 shrink-0">•</span>
+            <span>Shipped <a href="https://play.google.com/store/apps/details?id=com.company.foodu&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="link font-medium text-zinc-950 dark:text-white arrow-link">Ayu AI</a>, an AI food tracker with personalized Ayurvedic feedback on Google Play.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="text-zinc-400 dark:text-zinc-500 text-xs mt-1.5 shrink-0">•</span>
+            <span>Ranked <strong class="text-zinc-950 dark:text-white font-medium">#3 in Western Canada in sales</strong> at Telus ($150k+ in Q1) while diagnosing and resolving in-person technical issues and billing disputes.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="text-zinc-400 dark:text-zinc-500 text-xs mt-1.5 shrink-0">•</span>
+            <span>Graduated from the <strong class="text-zinc-950 dark:text-white font-medium">University of British Columbia (UBC)</strong> with a B.Sc. in Computer Science.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="text-zinc-400 dark:text-zinc-500 text-xs mt-1.5 shrink-0">•</span>
+            <span>Connect on <a href="https://x.com/labuilds" target="_blank" rel="noopener noreferrer" class="link arrow-link">Twitter / 𝕏</a> or <a href="https://www.linkedin.com/in/lakshya01/" target="_blank" rel="noopener noreferrer" class="link arrow-link">LinkedIn</a>, or email me at <a href="mailto:la.apps09@gmail.com" class="link">la.apps09@gmail.com</a>.</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- PROJECTS (CONSISTENT TWO-LINE FORMAT) -->
+      <section class="space-y-4 pt-6 border-t border-zinc-200 dark:border-zinc-800">
+        <h2 class="text-xs font-semibold uppercase tracking-wider text-zinc-600 dark:text-zinc-400">Projects</h2>
+
+        <div class="space-y-4.5 text-[15.5px]">
+
+          <!-- 1. Focus Space -->
+          <div class="space-y-0.5">
+            <div class="flex items-baseline justify-between gap-2">
+              <a href="https://apps.apple.com/app/focus-space-task-timer/id6792886499" target="_blank" rel="noopener noreferrer" class="font-medium text-zinc-950 dark:text-white link arrow-link">
+                Focus Space: Task & Timer
+              </a>
+              <span class="text-xs text-zinc-500 dark:text-zinc-400 font-mono shrink-0">June 2026 – Present</span>
+            </div>
+            <p class="text-[14.5px] text-zinc-700 dark:text-zinc-300 leading-relaxed">
+              — Native iOS Pomodoro timer & priority task manager
+            </p>
+          </div>
+
+          <!-- 2. QuoteCatch -->
+          <div class="space-y-0.5">
+            <div class="flex items-baseline justify-between gap-2">
+              <a href="https://github.com/labuilds/quotecatch" target="_blank" rel="noopener noreferrer" class="font-medium text-zinc-950 dark:text-white link arrow-link">
+                QuoteCatch
+              </a>
+              <span class="text-xs text-zinc-500 dark:text-zinc-400 font-mono shrink-0">April 2026 – June 2026</span>
+            </div>
+            <p class="text-[14.5px] text-zinc-700 dark:text-zinc-300 leading-relaxed">
+              — Instant roofing estimator using satellite imagery & spatial data for roofers, with 33k ETL pipeline
+            </p>
+          </div>
+
+          <!-- 3. AI Content Marketing System -->
+          <div class="space-y-0.5">
+            <div class="flex items-baseline justify-between gap-2">
+              <a href="https://www.canva.com/design/DAHYP9L_pSQ/3hMQcbylcldCGDPMOGz_1w/edit" target="_blank" rel="noopener noreferrer" class="font-medium text-zinc-950 dark:text-white link arrow-link">
+                AI Content Marketing
+              </a>
+              <span class="text-xs text-zinc-500 dark:text-zinc-400 font-mono shrink-0">September 2025</span>
+            </div>
+            <p class="text-[14.5px] text-zinc-700 dark:text-zinc-300 leading-relaxed">
+              — Automates TikTok video generation • 2nd Place Mosaic Buildathon
+            </p>
+          </div>
+
+          <!-- 4. Ayu AI -->
+          <div class="space-y-0.5">
+            <div class="flex items-baseline justify-between gap-2">
+              <a href="https://play.google.com/store/apps/details?id=com.company.foodu&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="font-medium text-zinc-950 dark:text-white link arrow-link">
+                Ayu AI
+              </a>
+              <span class="text-xs text-zinc-500 dark:text-zinc-400 font-mono shrink-0">July 2024 – Dec 2025</span>
+            </div>
+            <p class="text-[14.5px] text-zinc-700 dark:text-zinc-300 leading-relaxed">
+              — AI food tracker with personalized Ayurvedic health feedback
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- EXPERIENCE (LOCATION UNDER DATE ON RIGHT) -->
+      <section class="space-y-5 pt-6 border-t border-zinc-200 dark:border-zinc-800">
+        <h2 class="text-xs font-semibold uppercase tracking-wider text-zinc-600 dark:text-zinc-400">Experience</h2>
+
+        <div class="space-y-4.5 text-[15.5px]">
+
+          <!-- Telus -->
+          <div class="space-y-1">
+            <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-1">
+              <div class="flex flex-wrap items-baseline gap-2">
+                <span class="font-semibold text-zinc-950 dark:text-white">Telus Communications</span>
+                <span class="text-zinc-600 dark:text-zinc-400 text-sm">— Sales & Customer Service Representative</span>
+              </div>
+              <div class="text-xs font-mono text-zinc-500 dark:text-zinc-400 sm:text-right shrink-0 leading-tight">
+                <div>Nov 2024 – April 2025</div>
+                <div class="pt-0.5">Burnaby, BC</div>
+              </div>
+            </div>
+            <p class="text-[14.5px] text-zinc-700 dark:text-zinc-300 leading-relaxed">
+              — Ranked #3 in Western Canada in sales ($150k+ in Q1) while diagnosing and resolving in-person technical issues and billing disputes.
+            </p>
+          </div>
+
+          <!-- Best Buy -->
+          <div class="space-y-1">
+            <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-1">
+              <div class="flex flex-wrap items-baseline gap-2">
+                <span class="font-semibold text-zinc-950 dark:text-white">Best Buy</span>
+                <span class="text-zinc-600 dark:text-zinc-400 text-sm">— Sales & Customer Service Representative</span>
+              </div>
+              <div class="text-xs font-mono text-zinc-500 dark:text-zinc-400 sm:text-right shrink-0 leading-tight">
+                <div>July 2023 – Nov 2023</div>
+                <div class="pt-0.5">Vancouver, BC</div>
+              </div>
+            </div>
+            <p class="text-[14.5px] text-zinc-700 dark:text-zinc-300 leading-relaxed">
+              — Exceeded monthly sales targets by 50% ($60k+/mo revenue) while diagnosing hardware/software issues and advising customers on computing solutions.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- EDUCATION (LOCATION UNDER DATE ON RIGHT) -->
+      <section class="space-y-4 pt-6 border-t border-zinc-200 dark:border-zinc-800">
+        <h2 class="text-xs font-semibold uppercase tracking-wider text-zinc-600 dark:text-zinc-400">Education</h2>
+
+        <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-1 text-[15.5px]">
+          <div class="flex flex-wrap items-baseline gap-2">
+            <span class="font-medium text-zinc-950 dark:text-white">University of British Columbia (UBC)</span>
+            <span class="text-zinc-600 dark:text-zinc-400 text-sm">— Bachelor of Science (B.Sc.) in Computer Science</span>
+          </div>
+          <div class="text-xs font-mono text-zinc-500 dark:text-zinc-400 sm:text-right shrink-0 leading-tight">
+            <div>Sept 2019 – May 2023</div>
+            <div class="pt-0.5">Vancouver, BC</div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-zinc-200 dark:border-zinc-800 mt-12">
+    <div class="mx-auto max-w-2xl px-5 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500 dark:text-zinc-400">
+      <div class="flex items-center gap-5">
+        <a href="https://github.com/labuilds" target="_blank" rel="noopener noreferrer" class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white transition">GitHub</a>
+        <a href="https://apps.apple.com/app/focus-space-task-timer/id6792886499" target="_blank" rel="noopener noreferrer" class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white transition">App Store</a>
+        <a href="https://www.linkedin.com/in/lakshya01/" target="_blank" rel="noopener noreferrer" class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white transition">LinkedIn</a>
+        <a href="https://x.com/labuilds" target="_blank" rel="noopener noreferrer" class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white transition">𝕏 (Twitter)</a>
+        <a href="mailto:la.apps09@gmail.com" class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white transition">Email</a>
+      </div>
+      <div>
+        <span>© 2026 Lakshya Agarwal</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      html.classList.add('theme-transition');
+      const isDark = html.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      
+      window.setTimeout(() => {
+        html.classList.remove('theme-transition');
+      }, 250);
+    }
+  </script>
+
+</body>
+</html>
