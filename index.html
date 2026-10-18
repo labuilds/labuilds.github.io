@@ -93,13 +93,13 @@
     }
   </style>
 </head>
-<body class="min-h-screen flex flex-col bg-white dark:bg-[#0e1015] text-zinc-900 dark:text-zinc-100 antialiased">
+<body class="min-h-screen flex flex-col bg-white dark:bg-[#020618] text-zinc-900 dark:text-[#e5e7eb] antialiased">
 
   <!-- TOP NAV -->
-  <header class="border-b border-zinc-200 dark:border-zinc-800">
+  <header class="border-b border-zinc-200 dark:border-zinc-400">
     <div class="mx-auto max-w-2xl px-5 py-5 flex items-center justify-between">
       <a href="/" class="text-base font-semibold tracking-tight text-zinc-950 dark:text-white">
-        Lakshya Agarwal
+        labuilds.
       </a>
 
       <div class="flex items-center gap-5 text-sm">
@@ -111,7 +111,7 @@
         <!-- THEME TOGGLE -->
         <button onclick="toggleTheme()" class="relative w-7 h-7 flex items-center justify-center rounded-md text-zinc-500 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-white cursor-pointer" aria-label="Toggle Theme">
           <svg id="themeIconSun" class="w-4 h-4 absolute transition-all duration-300 transform rotate-90 scale-0 opacity-0 dark:rotate-0 dark:scale-100 dark:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-          <svg id="themeIconMoon" class="w-4 h-4 absolute transition-all duration-300 transform rotate-0 scale-100 opacity-100 dark:-rotate-90 dark:scale-0 dark:opacity-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg id="themeIconMoon" class="w-4 h-4 absolute transition-all duration-300 transform rotate-0 scale-100 opacity-100 dark:-rotate-90 dark:scale-0 dark:opacity-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3a6 6 0 0 0 9 9 9 0 1 1-9-9Z"/></svg>
         </button>
       </div>
     </div>
@@ -136,12 +136,13 @@
       </section>
 
       <!-- SUMMARY -->
-      <section class="pt-6 border-t border-zinc-200 dark:border-zinc-800">
-        <ul class="text-[15.5px] text-zinc-800 dark:text-zinc-200 space-y-3 leading-relaxed">
+      <section class="pt-6 border-t border-zinc-200 dark:border-zinc-400">
+        <ul class="text-[15.5px] text-zinc-800 dark:text-[#e5e7eb] space-y-3 leading-relaxed">
           <li class="flex items-start gap-2.5">
             <span class="text-zinc-400 dark:text-zinc-500 text-xs mt-1.5 shrink-0">•</span>
             <span>Currently working on <a href="https://apps.apple.com/app/focus-space-task-timer/id6792886499" target="_blank" rel="noopener noreferrer" class="link font-medium text-zinc-950 dark:text-white arrow-link">Focus Space: Task & Timer</a>, a native iOS Pomodoro app live on the Apple App Store.</span>
           </li>
+          <!-- Past projects hidden from summary since they appear under Shipped Projects below
           <li class="flex items-start gap-2.5">
             <span class="text-zinc-400 dark:text-zinc-500 text-xs mt-1.5 shrink-0">•</span>
             <span>Built <a href="https://github.com/labuilds/quotecatch" target="_blank" rel="noopener noreferrer" class="link font-medium text-zinc-950 dark:text-white arrow-link">QuoteCatch</a>, an instant roofing estimator tool that uses satellite imagery and spatial data to estimate roofing costs for roofers, backed by a 33k-record ETL pipeline.</span>
@@ -154,6 +155,7 @@
             <span class="text-zinc-400 dark:text-zinc-500 text-xs mt-1.5 shrink-0">•</span>
             <span>Shipped <a href="https://play.google.com/store/apps/details?id=com.company.foodu&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="link font-medium text-zinc-950 dark:text-white arrow-link">Ayu AI</a>, an AI food tracker with personalized Ayurvedic feedback on Google Play.</span>
           </li>
+          -->
           <li class="flex items-start gap-2.5">
             <span class="text-zinc-400 dark:text-zinc-500 text-xs mt-1.5 shrink-0">•</span>
             <span>Ranked <strong class="text-zinc-950 dark:text-white font-medium">#3 in Western Canada in sales</strong> at Telus ($150k+ in Q1) while diagnosing and resolving in-person technical issues and billing disputes.</span>
@@ -169,9 +171,9 @@
         </ul>
       </section>
 
-      <!-- PROJECTS (CONSISTENT TWO-LINE FORMAT) -->
-      <section class="space-y-4 pt-6 border-t border-zinc-200 dark:border-zinc-800">
-        <h2 class="text-xs font-semibold uppercase tracking-wider text-zinc-600 dark:text-zinc-400">Projects</h2>
+      <!-- SHIPPED PROJECTS (CONSISTENT TWO-LINE FORMAT) -->
+      <section class="space-y-4 pt-6 border-t border-zinc-200 dark:border-zinc-400">
+        <h2 class="text-xs font-semibold uppercase tracking-wider text-zinc-600 dark:text-zinc-400">Shipped Projects</h2>
 
         <div class="space-y-5 text-[15.5px]">
 
@@ -231,7 +233,7 @@
       </section>
 
       <!-- EXPERIENCE (LOCATION UNDER DATE ON RIGHT) -->
-      <section class="space-y-5 pt-6 border-t border-zinc-200 dark:border-zinc-800">
+      <section class="space-y-5 pt-6 border-t border-zinc-200 dark:border-zinc-400">
         <h2 class="text-xs font-semibold uppercase tracking-wider text-zinc-600 dark:text-zinc-400">Experience</h2>
 
         <div class="space-y-7 text-[15.5px]">
@@ -274,13 +276,13 @@
       </section>
 
       <!-- EDUCATION (LOCATION UNDER DATE ON RIGHT) -->
-      <section class="space-y-4 pt-6 border-t border-zinc-200 dark:border-zinc-800">
+      <section class="space-y-4 pt-6 border-t border-zinc-200 dark:border-zinc-400">
         <h2 class="text-xs font-semibold uppercase tracking-wider text-zinc-600 dark:text-zinc-400">Education</h2>
 
         <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-1 text-[15.5px]">
           <div class="flex flex-wrap items-baseline gap-2">
             <span class="font-medium text-zinc-950 dark:text-white">University of British Columbia (UBC)</span>
-            <span class="text-zinc-600 dark:text-zinc-400 text-sm">— Bachelor of Science (B.Sc.) in Computer Science</span>
+            <span class="text-zinc-700 dark:text-zinc-300 text-sm">— Bachelor of Science (B.Sc.) in Computer Science</span>
           </div>
           <div class="text-xs font-mono text-zinc-500 dark:text-zinc-400 sm:text-right shrink-0 leading-tight">
             <div>Sept 2019 – May 2023</div>
@@ -293,7 +295,7 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="border-t border-zinc-200 dark:border-zinc-800 mt-12">
+  <footer class="border-t border-zinc-200 dark:border-zinc-400 mt-12">
     <div class="mx-auto max-w-2xl px-5 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500 dark:text-zinc-400">
       <div class="flex items-center gap-5">
         <a href="https://github.com/labuilds" target="_blank" rel="noopener noreferrer" class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white transition">GitHub</a>
