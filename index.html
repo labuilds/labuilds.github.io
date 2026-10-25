@@ -107,6 +107,19 @@
       text-transform: uppercase;
       box-shadow: 2px 2px 0px #0A0A0A;
     }
+
+    /* Custom subtle scrollbar for screenshot tray */
+    .screens-tray::-webkit-scrollbar {
+      height: 6px;
+    }
+    .screens-tray::-webkit-scrollbar-track {
+      background: #F2EEE8;
+      border-radius: 4px;
+    }
+    .screens-tray::-webkit-scrollbar-thumb {
+      background: #0A0A0A;
+      border-radius: 4px;
+    }
   </style>
 </head>
 <body class="min-h-screen bg-[#F2EEE8] text-[#0A0A0A] flex flex-col bg-grain antialiased selection:bg-[#0A0A0A] selection:text-[#FFD66B]">
@@ -133,17 +146,17 @@
 
       <!-- NAVIGATION LINKS -->
       <div class="hidden md:flex items-center gap-2">
-        <a href="#projects" class="brutal-btn bg-[#FFD66B] border-2 border-[#0A0A0A] rounded-xl px-3.5 py-1.5 text-xs font-heading font-bold shadow-brutal-sm">
+        <a href="#showcase" class="brutal-btn bg-[#FFD66B] border-2 border-[#0A0A0A] rounded-xl px-3.5 py-1.5 text-xs font-heading font-bold shadow-brutal-sm">
+          iOS App
+        </a>
+        <a href="#projects" class="brutal-btn bg-[#FFB8D1] border-2 border-[#0A0A0A] rounded-xl px-3.5 py-1.5 text-xs font-heading font-bold shadow-brutal-sm">
           Projects
         </a>
-        <a href="#metrics" class="brutal-btn bg-[#FFB8D1] border-2 border-[#0A0A0A] rounded-xl px-3.5 py-1.5 text-xs font-heading font-bold shadow-brutal-sm">
+        <a href="#metrics" class="brutal-btn bg-[#9BE7C6] border-2 border-[#0A0A0A] rounded-xl px-3.5 py-1.5 text-xs font-heading font-bold shadow-brutal-sm">
           Impact
         </a>
-        <a href="#experience" class="brutal-btn bg-[#9BE7C6] border-2 border-[#0A0A0A] rounded-xl px-3.5 py-1.5 text-xs font-heading font-bold shadow-brutal-sm">
+        <a href="#experience" class="brutal-btn bg-[#A7E3F1] border-2 border-[#0A0A0A] rounded-xl px-3.5 py-1.5 text-xs font-heading font-bold shadow-brutal-sm">
           Experience
-        </a>
-        <a href="#stack" class="brutal-btn bg-[#A7E3F1] border-2 border-[#0A0A0A] rounded-xl px-3.5 py-1.5 text-xs font-heading font-bold shadow-brutal-sm">
-          Stack
         </a>
       </div>
 
@@ -195,16 +208,16 @@
 
         <!-- ACTION BUTTONS -->
         <div class="flex flex-wrap items-center gap-3.5 pt-2">
-          <a href="#projects" class="brutal-btn bg-[#0A0A0A] text-white hover:text-white border-[2.5px] border-[#0A0A0A] rounded-xl px-5 py-3 text-sm font-heading font-extrabold flex items-center gap-2 shadow-brutal">
-            <span>Explore Shipped Work</span>
+          <a href="#showcase" class="brutal-btn bg-[#0A0A0A] text-white hover:text-white border-[2.5px] border-[#0A0A0A] rounded-xl px-5 py-3 text-sm font-heading font-extrabold flex items-center gap-2 shadow-brutal">
+            <span>View Shipped iOS App</span>
             <span class="font-mono">↓</span>
           </a>
-          <a href="https://github.com/labuilds" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-white hover:bg-zinc-50 text-[#0A0A0A] border-[2.5px] border-[#0A0A0A] rounded-xl px-5 py-3 text-sm font-heading font-extrabold flex items-center gap-2 shadow-brutal">
-            <span>GitHub Profile</span>
-            <span class="font-mono">↗</span>
+          <a href="#projects" class="brutal-btn bg-white hover:bg-zinc-50 text-[#0A0A0A] border-[2.5px] border-[#0A0A0A] rounded-xl px-5 py-3 text-sm font-heading font-extrabold flex items-center gap-2 shadow-brutal">
+            <span>All Projects</span>
+            <span class="font-mono">↓</span>
           </a>
-          <a href="https://www.linkedin.com/in/lakshya01/" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#A7E3F1] hover:bg-[#8ddcee] text-[#0A0A0A] border-[2.5px] border-[#0A0A0A] rounded-xl px-5 py-3 text-sm font-heading font-extrabold flex items-center gap-2 shadow-brutal">
-            <span>LinkedIn</span>
+          <a href="https://github.com/labuilds" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#FFD66B] hover:bg-[#fed053] text-[#0A0A0A] border-[2.5px] border-[#0A0A0A] rounded-xl px-5 py-3 text-sm font-heading font-extrabold flex items-center gap-2 shadow-brutal">
+            <span>GitHub Profile</span>
             <span class="font-mono">↗</span>
           </a>
         </div>
@@ -294,81 +307,98 @@
       </div>
     </section>
 
-    <!-- LIVE INTERACTIVE WIDGET (TANO SLACK-STYLE DEMO) -->
-    <section class="space-y-4">
-      <div class="bg-[#FFFFFF] border-[2.5px] border-[#0A0A0A] rounded-3xl p-6 sm:p-8 shadow-brutal-lg relative overflow-hidden">
+    <!-- NATIVE IOS APP SHOWCASE (AUTHENTIC APP STORE SCREENSHOTS) -->
+    <section id="showcase" class="space-y-4">
+      <div class="bg-[#FFFFFF] border-[2.5px] border-[#0A0A0A] rounded-3xl p-6 sm:p-10 shadow-brutal-lg relative overflow-hidden">
         
-        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
           
-          <!-- LEFT EXPLANATION -->
-          <div class="space-y-4 max-w-xl">
+          <!-- LEFT: APP OVERVIEW & CALLOUTS -->
+          <div class="space-y-5 max-w-xl">
             <div class="flex items-center gap-2">
               <span class="w-3 h-3 rounded-full bg-[#FF7A66] border border-[#0A0A0A]"></span>
               <span class="w-3 h-3 rounded-full bg-[#FFD66B] border border-[#0A0A0A]"></span>
               <span class="w-3 h-3 rounded-full bg-[#9BE7C6] border border-[#0A0A0A]"></span>
               <span class="text-xs font-mono font-bold uppercase tracking-widest text-[#0A0A0A] ml-2">
-                LIVE INTERACTIVE APP DEMO
+                SHIPPED NATIVE IOS APP · APPLE APP STORE
               </span>
             </div>
 
-            <h3 class="text-2xl sm:text-3xl font-heading font-black tracking-tight text-[#0A0A0A]">
+            <h3 class="text-3xl sm:text-4xl font-heading font-black tracking-tight text-[#0A0A0A]">
               Focus Space: Task & Timer
             </h3>
             
-            <p class="text-sm sm:text-base text-[#4A4643] leading-relaxed">
-              A native iOS app designed for deep work. Built in Swift & SwiftUI, implementing the "Prioritize, Focus, Reflect" system. Try the live interactive Pomodoro timer right here on the web:
+            <p class="text-base text-[#4A4643] leading-relaxed">
+              A distraction-free productivity app built natively in Swift & SwiftUI. Features a dedicated Pomodoro timer paired with the structured <strong>"Prioritize, Focus, Reflect"</strong> workflow to help knowledge workers stay in flow.
             </p>
 
-            <div class="flex flex-wrap items-center gap-3 pt-2">
-              <a href="https://apps.apple.com/app/focus-space-task-timer/id6792886499" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#0A0A0A] text-white hover:text-white border-2 border-[#0A0A0A] rounded-xl px-4 py-2.5 text-xs sm:text-sm font-heading font-extrabold flex items-center gap-2 shadow-brutal-sm">
-                <span>View on App Store</span>
+            <!-- KEY ENGINEERING HIGHLIGHTS -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+              <div class="p-3.5 bg-[#F2EEE8] border-2 border-[#0A0A0A] rounded-xl shadow-brutal-sm">
+                <div class="text-xs font-mono font-bold text-[#0A0A0A] uppercase flex items-center gap-1.5">
+                  <span class="text-emerald-600">●</span> Swift & SwiftUI
+                </div>
+                <div class="text-xs text-[#4A4643] mt-1 leading-normal">
+                  Native 120Hz frame rates, custom haptics, and zero battery drain.
+                </div>
+              </div>
+              <div class="p-3.5 bg-[#F2EEE8] border-2 border-[#0A0A0A] rounded-xl shadow-brutal-sm">
+                <div class="text-xs font-mono font-bold text-[#0A0A0A] uppercase flex items-center gap-1.5">
+                  <span class="text-blue-600">●</span> 39 App Store Regions
+                </div>
+                <div class="text-xs text-[#4A4643] mt-1 leading-normal">
+                  Automated CI/CD with Fastlane & App Store Connect API.
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-3 pt-3">
+              <a href="https://apps.apple.com/app/focus-space-task-timer/id6792886499" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#0A0A0A] text-white hover:text-white border-2 border-[#0A0A0A] rounded-xl px-5 py-3 text-xs sm:text-sm font-heading font-extrabold flex items-center gap-2 shadow-brutal">
+                <span>View on Apple App Store</span>
                 <span class="font-mono">↗</span>
               </a>
-              <span class="text-xs font-mono text-tano-sub">iOS 17+ • Swift • SwiftUI</span>
+              <span class="text-xs font-mono font-semibold text-tano-sub">Compatible with iOS 17.0+</span>
             </div>
           </div>
 
-          <!-- RIGHT INTERACTIVE MINI APP (TACTILE NEOMORPHIC POMODORO) -->
-          <div class="w-full lg:w-80 bg-[#F2EEE8] border-[2.5px] border-[#0A0A0A] rounded-2xl p-5 shadow-brutal-md space-y-4">
-            
-            <div class="flex items-center justify-between border-b-2 border-[#0A0A0A]/20 pb-2">
-              <span class="text-xs font-mono font-bold uppercase tracking-wider text-[#0A0A0A]">⚡️ FOCUS SESSION</span>
-              <span id="sessionStatus" class="pill-badge bg-[#9BE7C6] text-[9px] py-0.5 px-2">READY</span>
-            </div>
-
-            <!-- TIMER DISPLAY -->
-            <div class="text-center py-2 bg-white border-2 border-[#0A0A0A] rounded-xl shadow-brutal-sm">
-              <div id="timerDisplay" class="font-heading font-black text-4xl sm:text-5xl tracking-tight text-[#0A0A0A]">
-                25:00
+          <!-- RIGHT: AUTHENTIC SCREENSHOT GALLERY (IPHONE FRAMES) -->
+          <div class="w-full lg:w-auto overflow-hidden">
+            <div class="flex items-center gap-4 overflow-x-auto pb-4 pt-2 px-1 screens-tray">
+              
+              <!-- SCREENSHOT 1: FOCUS TIMER -->
+              <div class="relative shrink-0 w-44 sm:w-52 bg-[#0A0A0A] p-2.5 rounded-[28px] border-[2.5px] border-[#0A0A0A] shadow-brutal-md">
+                <div class="overflow-hidden rounded-[20px] bg-black">
+                  <img src="./assets/focus_space/screen_1.webp" alt="Focus Space - Main Focus Timer Screen" class="w-full h-auto object-cover" loading="lazy">
+                </div>
+                <div class="text-center pt-2 text-[10px] font-mono font-bold text-zinc-300 uppercase tracking-wider">
+                  01 · Focus Timer
+                </div>
               </div>
-              <div class="text-[10px] font-mono uppercase text-tano-sub mt-0.5">
-                PRIORITIZE · FOCUS · REFLECT
+
+              <!-- SCREENSHOT 2: PRIORITIZE -->
+              <div class="relative shrink-0 w-44 sm:w-52 bg-[#0A0A0A] p-2.5 rounded-[28px] border-[2.5px] border-[#0A0A0A] shadow-brutal-md">
+                <div class="overflow-hidden rounded-[20px] bg-black">
+                  <img src="./assets/focus_space/screen_2.webp" alt="Focus Space - Prioritize Tasks" class="w-full h-auto object-cover" loading="lazy">
+                </div>
+                <div class="text-center pt-2 text-[10px] font-mono font-bold text-zinc-300 uppercase tracking-wider">
+                  02 · Task Priority
+                </div>
               </div>
-            </div>
 
-            <!-- CONTROLS -->
-            <div class="flex items-center gap-2">
-              <button id="startTimerBtn" onclick="toggleTimer()" class="brutal-btn flex-1 bg-[#FFD66B] hover:bg-[#fed053] border-2 border-[#0A0A0A] rounded-xl py-2 text-xs font-heading font-extrabold text-[#0A0A0A] shadow-brutal-sm">
-                Start Session
-              </button>
-              <button onclick="resetTimer()" class="brutal-btn bg-white hover:bg-zinc-100 border-2 border-[#0A0A0A] rounded-xl px-3 py-2 text-xs font-mono font-bold text-[#0A0A0A] shadow-brutal-sm">
-                ↺ Reset
-              </button>
-            </div>
+              <!-- SCREENSHOT 3: REFLECT -->
+              <div class="relative shrink-0 w-44 sm:w-52 bg-[#0A0A0A] p-2.5 rounded-[28px] border-[2.5px] border-[#0A0A0A] shadow-brutal-md hidden sm:block">
+                <div class="overflow-hidden rounded-[20px] bg-black">
+                  <img src="./assets/focus_space/screen_3.webp" alt="Focus Space - Reflect & Flow History" class="w-full h-auto object-cover" loading="lazy">
+                </div>
+                <div class="text-center pt-2 text-[10px] font-mono font-bold text-zinc-300 uppercase tracking-wider">
+                  03 · Reflection & Stats
+                </div>
+              </div>
 
-            <!-- MINI TASK CHECKLIST -->
-            <div class="space-y-1.5 pt-1 text-xs">
-              <div class="text-[10px] font-mono uppercase font-bold text-tano-sub">CURRENT TASK</div>
-              <label class="flex items-center gap-2 p-2 bg-white border border-[#0A0A0A] rounded-lg cursor-pointer hover:bg-amber-50/50 transition">
-                <input type="checkbox" checked class="w-4 h-4 accent-[#0A0A0A] rounded cursor-pointer">
-                <span class="line-through text-zinc-500 font-medium">Replicate Tano's brutalist UI</span>
-              </label>
-              <label class="flex items-center gap-2 p-2 bg-white border border-[#0A0A0A] rounded-lg cursor-pointer hover:bg-amber-50/50 transition">
-                <input type="checkbox" class="w-4 h-4 accent-[#0A0A0A] rounded cursor-pointer">
-                <span class="text-[#0A0A0A] font-semibold">Deploy to labuilds.github.io</span>
-              </label>
             </div>
-
+            <div class="text-[11px] font-mono text-zinc-400 text-right pr-2 pt-1 hidden sm:block">
+              ← Scroll to explore screens →
+            </div>
           </div>
 
         </div>
@@ -381,7 +411,7 @@
       
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b-[2.5px] border-[#0A0A0A] pb-4">
         <div>
-          <span class="pill-badge bg-[#FF7A66] text-white text-[10px] mb-2">SHIPPED CODE</span>
+          <span class="pill-badge bg-[#FF7A66] text-white text-[10px] mb-2">PORTFOLIO</span>
           <h2 class="text-3xl sm:text-4xl font-heading font-black tracking-tight text-[#0A0A0A]">
             Selected Projects & Systems.
           </h2>
@@ -712,82 +742,18 @@
       <div class="pt-6 border-t border-zinc-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs font-mono text-zinc-400">
         <div>© 2026 Lakshya Agarwal. Built with pure craft.</div>
         <div class="flex items-center gap-4">
+          <a href="#showcase" class="hover:text-white transition">iOS App</a>
+          <span>•</span>
           <a href="#projects" class="hover:text-white transition">Projects</a>
           <span>•</span>
           <a href="#metrics" class="hover:text-white transition">Impact</a>
           <span>•</span>
           <a href="#experience" class="hover:text-white transition">Experience</a>
-          <span>•</span>
-          <a href="#stack" class="hover:text-white transition">Stack</a>
         </div>
       </div>
     </section>
 
   </main>
-
-  <!-- INTERACTIVE TIMER LOGIC -->
-  <script>
-    let timerDuration = 25 * 60; // 25 minutes
-    let timeRemaining = timerDuration;
-    let timerInterval = null;
-    let isRunning = false;
-
-    const timerDisplay = document.getElementById('timerDisplay');
-    const startTimerBtn = document.getElementById('startTimerBtn');
-    const sessionStatus = document.getElementById('sessionStatus');
-
-    function updateDisplay() {
-      const minutes = Math.floor(timeRemaining / 60);
-      const seconds = timeRemaining % 60;
-      timerDisplay.textContent = 
-        `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-    }
-
-    function toggleTimer() {
-      if (isRunning) {
-        clearInterval(timerInterval);
-        isRunning = false;
-        startTimerBtn.textContent = 'Resume Session';
-        startTimerBtn.classList.remove('bg-[#FF7A66]');
-        startTimerBtn.classList.add('bg-[#FFD66B]');
-        sessionStatus.textContent = 'PAUSED';
-        sessionStatus.className = 'pill-badge bg-[#FFD66B] text-[9px] py-0.5 px-2';
-      } else {
-        isRunning = true;
-        startTimerBtn.textContent = 'Pause Session';
-        startTimerBtn.classList.remove('bg-[#FFD66B]');
-        startTimerBtn.classList.add('bg-[#FF7A66]');
-        sessionStatus.textContent = 'IN FOCUS';
-        sessionStatus.className = 'pill-badge bg-[#FF7A66] text-white text-[9px] py-0.5 px-2';
-        
-        timerInterval = setInterval(() => {
-          if (timeRemaining > 0) {
-            timeRemaining--;
-            updateDisplay();
-          } else {
-            clearInterval(timerInterval);
-            isRunning = false;
-            startTimerBtn.textContent = 'Start New';
-            sessionStatus.textContent = 'COMPLETE';
-            sessionStatus.className = 'pill-badge bg-[#9BE7C6] text-[9px] py-0.5 px-2';
-            alert('🎉 Focus Session Complete! Great job.');
-          }
-        }, 1000);
-      }
-    }
-
-    function resetTimer() {
-      clearInterval(timerInterval);
-      isRunning = false;
-      timeRemaining = timerDuration;
-      updateDisplay();
-      startTimerBtn.textContent = 'Start Session';
-      startTimerBtn.classList.remove('bg-[#FF7A66]');
-      startTimerBtn.classList.add('bg-[#FFD66B]');
-      sessionStatus.textContent = 'READY';
-      sessionStatus.className = 'pill-badge bg-[#9BE7C6] text-[9px] py-0.5 px-2';
-    }
-  </script>
 
 </body>
 </html>
