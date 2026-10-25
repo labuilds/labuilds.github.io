@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lakshya Agarwal — Software Engineer & Builder</title>
-  <meta name="description" content="Lakshya Agarwal — UBC Computer Science graduate ('23), iOS developer (Focus Space), and former #3 sales producer at Telus. Building production web, mobile, and AI systems.">
+  <title>Lakshya Agarwal — Forward Deployed & Solutions Engineer</title>
+  <meta name="description" content="Lakshya Agarwal — UBC Computer Science graduate ('23), iOS developer (Focus Space), and former #3 sales producer at Telus. Open to Forward Deployed Engineering, Solutions Engineering, and Technical Support roles.">
   
   <!-- Fonts: Inter Tight (Headings) + Inter (Body) + JetBrains Mono (Badges) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,600;0,700;0,800;0,900;1,800;1,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,600;0,700;0,800;1,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
   
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -18,17 +18,13 @@
         extend: {
           colors: {
             tano: {
-              bg: '#F2EEE8',
+              bg: '#F4F0EA',
               card: '#FFFFFF',
               ink: '#0A0A0A',
-              sub: '#4A4643',
+              sub: '#55514E',
               border: '#0A0A0A',
-              yellow: '#FFD66B',
-              pink: '#FFB8D1',
-              mint: '#9BE7C6',
-              sky: '#A7E3F1',
-              coral: '#FF7A66',
-              lavender: '#D8B4FE',
+              accent: '#FFD66B',
+              muted: '#EAE5DC',
             }
           },
           fontFamily: {
@@ -40,8 +36,6 @@
             'brutal-sm': '2px 2px 0px #0A0A0A',
             'brutal': '3px 3px 0px #0A0A0A',
             'brutal-md': '4px 4px 0px #0A0A0A',
-            'brutal-lg': '6px 6px 0px #0A0A0A',
-            'brutal-xl': '8px 8px 0px #0A0A0A',
           }
         }
       }
@@ -55,7 +49,7 @@
     }
     
     body {
-      background-color: #F2EEE8;
+      background-color: #F4F0EA;
       color: #0A0A0A;
       font-family: 'Inter', system-ui, sans-serif;
       text-rendering: optimizeLegibility;
@@ -64,18 +58,18 @@
 
     h1, h2, h3, h4, .font-heading {
       font-family: "Inter Tight", Inter, sans-serif;
-      letter-spacing: -0.035em;
+      letter-spacing: -0.025em;
     }
 
     .brutal-btn {
-      transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
     }
     .brutal-btn:hover {
       transform: translate(-1px, -1px);
-      box-shadow: 4px 4px 0px #0A0A0A;
+      box-shadow: 3.5px 3.5px 0px #0A0A0A;
     }
     .brutal-btn:active {
-      transform: translate(2px, 2px);
+      transform: translate(1.5px, 1.5px);
       box-shadow: 1px 1px 0px #0A0A0A;
     }
 
@@ -83,327 +77,198 @@
       transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
     .brutal-card:hover {
-      transform: translate(-2px, -2px);
-      box-shadow: 8px 8px 0px #0A0A0A;
-    }
-
-    .bg-grain {
-      background-image: radial-gradient(rgba(10, 10, 10, 0.04) 1px, transparent 1px);
-      background-size: 16px 16px;
+      transform: translate(-1px, -1px);
+      box-shadow: 4px 4px 0px #0A0A0A;
     }
 
     .pill-badge {
       display: inline-flex;
       align-items: center;
-      padding: 4px 10px;
-      border: 2px solid #0A0A0A;
+      padding: 3px 9px;
+      border: 1.5px solid #0A0A0A;
       border-radius: 9999px;
       font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.04em;
+      font-weight: 600;
+      letter-spacing: 0.03em;
       text-transform: uppercase;
-      box-shadow: 2px 2px 0px #0A0A0A;
+      background: #FFFFFF;
+      box-shadow: 1.5px 1.5px 0px #0A0A0A;
     }
   </style>
 </head>
-<body class="min-h-screen bg-[#F2EEE8] text-[#0A0A0A] flex flex-col bg-grain antialiased selection:bg-[#0A0A0A] selection:text-[#FFD66B]">
+<body class="min-h-screen bg-[#F4F0EA] text-[#0A0A0A] flex flex-col antialiased selection:bg-[#0A0A0A] selection:text-[#FFD66B]">
 
-  <!-- FLOATING NEO-BRUTALIST NAVBAR -->
-  <header class="sticky top-4 z-50 px-4 sm:px-6 max-w-6xl mx-auto w-full mb-8 sm:mb-12">
-    <nav class="bg-[#FFFFFF] border-[2.5px] border-[#0A0A0A] rounded-2xl px-4 py-3 sm:py-3.5 flex items-center justify-between shadow-brutal-md">
+  <!-- RESTRAINED NEO-BRUTALIST NAVBAR -->
+  <header class="sticky top-4 z-50 px-4 sm:px-6 max-w-5xl mx-auto w-full mb-8 sm:mb-12">
+    <nav class="bg-[#FFFFFF] border-2 border-[#0A0A0A] rounded-2xl px-4 py-3 flex items-center justify-between shadow-brutal">
       
       <!-- LOGO / IDENTITY -->
       <a href="/" class="flex items-center gap-2.5 group">
-        <span class="w-8 h-8 rounded-lg bg-[#FFD66B] border-2 border-[#0A0A0A] flex items-center justify-center font-heading font-black text-sm shadow-brutal-sm group-hover:rotate-6 transition-transform">
+        <span class="w-7 h-7 rounded-lg bg-[#FFD66B] border-[1.5px] border-[#0A0A0A] flex items-center justify-center font-heading font-bold text-xs shadow-brutal-sm">
           LA
         </span>
         <div class="flex flex-col">
-          <span class="font-heading font-black text-base tracking-tight leading-none text-[#0A0A0A]">
-            Lakshya Agarwal<span class="text-[#FF7A66]">.</span>
+          <span class="font-heading font-bold text-sm tracking-tight text-[#0A0A0A]">
+            Lakshya Agarwal
           </span>
-          <span class="text-[10px] font-mono font-medium text-tano-sub uppercase tracking-wider flex items-center gap-1.5 mt-0.5">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-            open to engineering roles
+          <span class="text-[10px] font-mono text-tano-sub uppercase tracking-wider flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+            open to roles
           </span>
         </div>
       </a>
 
       <!-- NAVIGATION LINKS -->
-      <div class="hidden md:flex items-center gap-2">
-        <a href="#case-study" class="brutal-btn bg-[#FFD66B] border-2 border-[#0A0A0A] rounded-xl px-3.5 py-1.5 text-xs font-heading font-bold shadow-brutal-sm">
-          Focus Space (iOS)
-        </a>
-        <a href="#projects" class="brutal-btn bg-[#FFB8D1] border-2 border-[#0A0A0A] rounded-xl px-3.5 py-1.5 text-xs font-heading font-bold shadow-brutal-sm">
-          Shipped Systems
-        </a>
-        <a href="#track-record" class="brutal-btn bg-[#9BE7C6] border-2 border-[#0A0A0A] rounded-xl px-3.5 py-1.5 text-xs font-heading font-bold shadow-brutal-sm">
-          Track Record
-        </a>
-        <a href="#experience" class="brutal-btn bg-[#A7E3F1] border-2 border-[#0A0A0A] rounded-xl px-3.5 py-1.5 text-xs font-heading font-bold shadow-brutal-sm">
-          Experience
-        </a>
+      <div class="hidden sm:flex items-center gap-3 text-xs font-heading font-semibold text-[#0A0A0A]">
+        <a href="#projects" class="hover:underline underline-offset-4">Shipped Projects</a>
+        <span>•</span>
+        <a href="#experience" class="hover:underline underline-offset-4">Customer Experience</a>
+        <span>•</span>
+        <a href="#stack" class="hover:underline underline-offset-4">Arsenal</a>
       </div>
 
       <!-- CTA BUTTON -->
-      <div class="flex items-center gap-2.5">
-        <a href="mailto:la.apps09@gmail.com" class="brutal-btn bg-[#FF7A66] hover:bg-[#ff6852] border-2 border-[#0A0A0A] rounded-xl px-4 py-2 text-xs sm:text-sm font-heading font-black tracking-tight flex items-center gap-1.5 shadow-brutal-sm">
+      <div class="flex items-center gap-2">
+        <a href="mailto:la.apps09@gmail.com" class="brutal-btn bg-[#FFD66B] border-[1.5px] border-[#0A0A0A] rounded-xl px-3.5 py-1.5 text-xs font-heading font-bold flex items-center gap-1 shadow-brutal-sm">
           <span>Get in touch</span>
-          <span class="font-mono text-sm">→</span>
+          <span class="font-mono text-xs">→</span>
         </a>
       </div>
     </nav>
   </header>
 
   <!-- MAIN CONTENT CONTAINER -->
-  <main class="flex-grow max-w-6xl mx-auto px-4 sm:px-6 w-full space-y-16 sm:space-y-24 pb-20">
+  <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 w-full space-y-14 sm:space-y-20 pb-20">
 
-    <!-- HERO SECTION (GROUNDED, HIGH-CLARITY POSITIONING) -->
-    <section class="space-y-8 pt-2 sm:pt-6">
+    <!-- HERO SECTION (GROUNDED, CLEAN, NOT SHOUTING) -->
+    <section class="space-y-6 pt-2">
       
       <!-- TOP CONTEXT BADGES -->
-      <div class="flex flex-wrap items-center gap-2.5">
-        <span class="pill-badge bg-[#FFD66B] text-[#0A0A0A]">
-          🎓 UBC Computer Science ('23)
+      <div class="flex flex-wrap items-center gap-2 text-xs">
+        <span class="pill-badge bg-white">
+          UBC Computer Science ('23)
         </span>
-        <span class="pill-badge bg-white text-[#0A0A0A]">
-          📍 India (Previously Vancouver 4.5 yrs)
+        <span class="pill-badge bg-white">
+          Previously Vancouver 4.5 yrs · Currently India
         </span>
-        <span class="pill-badge bg-[#9BE7C6] text-[#0A0A0A] flex items-center gap-1.5">
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-700 animate-pulse"></span>
-          Ready to join immediately
+        <span class="pill-badge bg-amber-100 text-amber-900 border-amber-900">
+          Immediate Availability
         </span>
       </div>
 
       <!-- MAIN HEADLINE -->
-      <div class="space-y-6">
-        <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-[74px] font-heading font-black tracking-tight leading-[0.98] text-[#0A0A0A]">
+      <div class="space-y-4">
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-heading font-bold tracking-tight text-[#0A0A0A] leading-[1.08]">
           Software engineer who builds,<br>
-          <span class="inline-block relative">
-            ships, and talks to users<span class="text-[#FF7A66]">.</span>
-            <span class="absolute left-0 bottom-1.5 sm:bottom-2 w-full h-3 sm:h-4 bg-[#FFD66B] -z-10 -rotate-1 rounded-sm border-b-2 border-[#0A0A0A]/20"></span>
-          </span>
+          <span class="underline decoration-[#FFD66B] decoration-wavy decoration-2">ships, and talks to users</span>.
         </h1>
 
-        <p class="max-w-2xl text-base sm:text-xl text-[#3A3633] font-medium leading-relaxed">
-          I'm <strong class="font-bold text-[#0A0A0A]">Lakshya Agarwal</strong>. I hold a Computer Science degree from UBC and have hands-on frontline sales experience (<strong class="font-bold text-[#0A0A0A]">#3 in Western Canada at Telus, $150k+ Q1</strong>). I build production iOS apps, full-stack web applications, and data pipelines—pairing engineering rigor with real empathy for how users behave.
+        <!-- SUMMARY COPYWRITING (PRESERVED AS REQUESTED) -->
+        <p class="max-w-2xl text-base sm:text-lg text-[#3A3633] font-normal leading-relaxed">
+          I'm <strong class="font-semibold text-[#0A0A0A]">Lakshya Agarwal</strong>. I hold a Computer Science degree from UBC and have hands-on frontline sales experience (<strong class="font-semibold text-[#0A0A0A]">#3 in Western Canada at Telus, $150k+ Q1</strong>). I build production iOS apps, full-stack web applications, and data pipelines—pairing engineering rigor with real empathy for how users behave.
         </p>
 
-        <!-- CURRENT STATUS HIGHLIGHT -->
-        <div class="p-4 bg-white border-2 border-[#0A0A0A] rounded-2xl shadow-brutal-sm max-w-2xl flex items-start gap-3">
-          <span class="text-lg mt-0.5">⚡️</span>
+        <!-- TARGETED ROLES BOX -->
+        <div class="p-3.5 bg-white border-[1.5px] border-[#0A0A0A] rounded-xl shadow-brutal-sm max-w-2xl flex items-start gap-3">
+          <span class="text-base mt-0.5">🎯</span>
           <div class="text-xs sm:text-sm text-[#4A4643] leading-relaxed">
-            <strong class="font-bold text-[#0A0A0A]">What I'm doing right now:</strong> Actively iterating on <a href="#case-study" class="underline font-bold text-[#0A0A0A]">Focus Space</a> (live on the App Store across 39 regions), and looking for full-time <strong>Forward Deployed Engineer</strong>, <strong>Founding Engineer</strong>, or <strong>Full-Stack Product</strong> roles.
+            <strong class="font-semibold text-[#0A0A0A]">Target Roles:</strong> Open to <span class="font-medium text-[#0A0A0A]">Forward Deployed Engineering (FDE)</span>, <span class="font-medium text-[#0A0A0A]">Solutions Engineering</span>, and <span class="font-medium text-[#0A0A0A]">Technical Support / Consulting</span> roles.
           </div>
         </div>
 
         <!-- ACTION BUTTONS -->
-        <div class="flex flex-wrap items-center gap-3.5 pt-2">
-          <a href="https://github.com/labuilds" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#0A0A0A] text-white hover:text-white border-[2.5px] border-[#0A0A0A] rounded-xl px-5 py-3 text-sm font-heading font-extrabold flex items-center gap-2 shadow-brutal">
-            <span>View Code on GitHub</span>
-            <span class="font-mono">↗</span>
+        <div class="flex flex-wrap items-center gap-3 pt-2">
+          <a href="https://github.com/labuilds" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#0A0A0A] text-white hover:text-white border-[1.5px] border-[#0A0A0A] rounded-xl px-4 py-2 text-xs sm:text-sm font-heading font-bold flex items-center gap-1.5 shadow-brutal-sm">
+            <span>GitHub Profile</span>
+            <span class="font-mono text-xs">↗</span>
           </a>
-          <a href="#case-study" class="brutal-btn bg-[#FFD66B] hover:bg-[#fed053] text-[#0A0A0A] border-[2.5px] border-[#0A0A0A] rounded-xl px-5 py-3 text-sm font-heading font-extrabold flex items-center gap-2 shadow-brutal">
-            <span>Inspect iOS Case Study</span>
-            <span class="font-mono">↓</span>
+          <a href="#projects" class="brutal-btn bg-white hover:bg-zinc-50 text-[#0A0A0A] border-[1.5px] border-[#0A0A0A] rounded-xl px-4 py-2 text-xs sm:text-sm font-heading font-bold flex items-center gap-1.5 shadow-brutal-sm">
+            <span>View Shipped Work</span>
+            <span class="font-mono text-xs">↓</span>
           </a>
-          <a href="https://www.linkedin.com/in/lakshya01/" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-white hover:bg-zinc-50 text-[#0A0A0A] border-[2.5px] border-[#0A0A0A] rounded-xl px-5 py-3 text-sm font-heading font-extrabold flex items-center gap-2 shadow-brutal">
+          <a href="https://www.linkedin.com/in/lakshya01/" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-white hover:bg-zinc-50 text-[#0A0A0A] border-[1.5px] border-[#0A0A0A] rounded-xl px-4 py-2 text-xs sm:text-sm font-heading font-bold flex items-center gap-1.5 shadow-brutal-sm">
             <span>LinkedIn</span>
-            <span class="font-mono">↗</span>
+            <span class="font-mono text-xs">↗</span>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- 4 CORE CAPABILITIES (CONCRETE ENGINEERING PILLARS) -->
-    <section id="track-record" class="space-y-6">
-      <div class="flex items-center justify-between border-b-[2.5px] border-[#0A0A0A] pb-3">
-        <h2 class="text-xs sm:text-sm font-mono font-bold tracking-widest uppercase text-[#0A0A0A] flex items-center gap-2">
-          <span>↑ PROVEN CAPABILITIES</span>
-          <span class="text-[#FF7A66]">●</span>
-          <span>SYSTEMS, DATA & USERS</span>
+    <!-- SHIPPED PROJECTS SECTION (ZERO REDUNDANCY: FOCUS SPACE + OTHER PROJECTS) -->
+    <section id="projects" class="space-y-6">
+      
+      <div class="flex items-baseline justify-between border-b-[1.5px] border-[#0A0A0A] pb-3">
+        <h2 class="text-xs font-mono font-bold tracking-wider uppercase text-[#0A0A0A] flex items-center gap-2">
+          <span>SHIPPED PROJECTS & SYSTEMS</span>
         </h2>
+        <span class="text-xs font-mono text-tano-sub">4 LIVE BUILDS</span>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
-        
-        <!-- PILLAR 1: NATIVE MOBILE -->
-        <div class="brutal-card bg-white border-[2.5px] border-[#0A0A0A] rounded-2xl p-5 shadow-brutal-md flex flex-col justify-between relative overflow-hidden group">
-          <div class="absolute -right-4 -bottom-4 w-20 h-20 bg-[#FFD66B] rounded-full -z-0 opacity-30 group-hover:scale-125 transition-transform"></div>
-          <div class="relative z-10 space-y-2">
-            <span class="pill-badge bg-[#FFD66B] text-[10px]">NATIVE MOBILE</span>
-            <div class="font-heading font-black text-3xl sm:text-4xl tracking-tight text-[#0A0A0A] pt-2">
-              Swift / iOS
-            </div>
-            <div class="text-xs font-mono font-bold uppercase tracking-wider text-tano-sub">
-              Focus Space · App Store
-            </div>
-            <p class="text-xs text-[#4A4643] leading-relaxed pt-1">
-              Shipped native SwiftUI app live across <strong>39 App Store regions</strong> with automated Fastlane CI/CD releases.
-            </p>
-          </div>
-        </div>
-
-        <!-- PILLAR 2: DATA & ETL -->
-        <div class="brutal-card bg-white border-[2.5px] border-[#0A0A0A] rounded-2xl p-5 shadow-brutal-md flex flex-col justify-between relative overflow-hidden group">
-          <div class="absolute -right-4 -bottom-4 w-20 h-20 bg-[#9BE7C6] rounded-full -z-0 opacity-30 group-hover:scale-125 transition-transform"></div>
-          <div class="relative z-10 space-y-2">
-            <span class="pill-badge bg-[#9BE7C6] text-[10px]">DATA & BACKEND</span>
-            <div class="font-heading font-black text-3xl sm:text-4xl tracking-tight text-[#0A0A0A] pt-2">
-              33K+ ETL
-            </div>
-            <div class="text-xs font-mono font-bold uppercase tracking-wider text-tano-sub">
-              PostgreSQL · Supabase
-            </div>
-            <p class="text-xs text-[#4A4643] leading-relaxed pt-1">
-              Engineered data pipeline ingesting and normalizing 33,000+ raw records into indexed PostgreSQL for QuoteCatch.
-            </p>
-          </div>
-        </div>
-
-        <!-- PILLAR 3: AI SYSTEMS -->
-        <div class="brutal-card bg-white border-[2.5px] border-[#0A0A0A] rounded-2xl p-5 shadow-brutal-md flex flex-col justify-between relative overflow-hidden group">
-          <div class="absolute -right-4 -bottom-4 w-20 h-20 bg-[#FFB8D1] rounded-full -z-0 opacity-30 group-hover:scale-125 transition-transform"></div>
-          <div class="relative z-10 space-y-2">
-            <span class="pill-badge bg-[#FFB8D1] text-[10px]">AI AGENT PIPELINES</span>
-            <div class="font-heading font-black text-3xl sm:text-4xl tracking-tight text-[#0A0A0A] pt-2">
-              2nd Place
-            </div>
-            <div class="text-xs font-mono font-bold uppercase tracking-wider text-tano-sub">
-              Mosaic AI Buildathon
-            </div>
-            <p class="text-xs text-[#4A4643] leading-relaxed pt-1">
-              Built multi-agent video generation platform using Gemini API, ElevenLabs, and n8n webhooks with strict schema validation.
-            </p>
-          </div>
-        </div>
-
-        <!-- PILLAR 4: FRONTLINE RIGOR -->
-        <div class="brutal-card bg-white border-[2.5px] border-[#0A0A0A] rounded-2xl p-5 shadow-brutal-md flex flex-col justify-between relative overflow-hidden group">
-          <div class="absolute -right-4 -bottom-4 w-20 h-20 bg-[#A7E3F1] rounded-full -z-0 opacity-30 group-hover:scale-125 transition-transform"></div>
-          <div class="relative z-10 space-y-2">
-            <span class="pill-badge bg-[#A7E3F1] text-[10px]">FRONTLINE SALES</span>
-            <div class="font-heading font-black text-3xl sm:text-4xl tracking-tight text-[#0A0A0A] pt-2">
-              #3 Telus
-            </div>
-            <div class="text-xs font-mono font-bold uppercase tracking-wider text-tano-sub">
-              Western Canada
-            </div>
-            <p class="text-xs text-[#4A4643] leading-relaxed pt-1">
-              Delivered <strong>$150k+ in Q1</strong> revenue while de-escalating in-person technical and network triage for customers.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ENGINEERING CASE STUDY (FOCUS SPACE AS PROOF OF CRAFT) -->
-    <section id="case-study" class="space-y-4">
-      <div class="bg-[#FFFFFF] border-[2.5px] border-[#0A0A0A] rounded-3xl p-6 sm:p-10 shadow-brutal-lg relative overflow-hidden">
-        
-        <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+      <!-- 1. FEATURED FLAGSHIP: FOCUS SPACE (NATIVE IOS WITH INTEGRATED DUAL-SCREEN MOCKUP) -->
+      <div class="brutal-card bg-white border-2 border-[#0A0A0A] rounded-2xl p-6 sm:p-8 shadow-brutal">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
           
-          <!-- LEFT: SYSTEM BREAKDOWN -->
-          <div class="space-y-5 max-w-lg">
-            
-            <div class="flex flex-wrap items-center gap-2">
-              <span class="pill-badge bg-[#FFD66B] text-[#0A0A0A] py-1 px-3">
-                ENGINEERING CASE STUDY
+          <!-- LEFT: PROJECT CONTEXT -->
+          <div class="space-y-4 max-w-lg">
+            <div class="flex items-center gap-2">
+              <span class="pill-badge bg-emerald-50 text-emerald-800 border-emerald-800 text-[10px]">
+                NATIVE IOS · APP STORE
               </span>
-              <span class="pill-badge bg-[#9BE7C6] text-[#0A0A0A] text-[10px] flex items-center gap-1">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-700 animate-pulse"></span>
-                ACTIVE RELEASES
-              </span>
+              <span class="text-xs font-mono text-tano-sub">39 REGIONS</span>
             </div>
 
-            <h3 class="text-3xl sm:text-4xl font-heading font-black tracking-tight text-[#0A0A0A]">
+            <h3 class="text-2xl sm:text-3xl font-heading font-bold text-[#0A0A0A] tracking-tight">
               Focus Space: Task & Timer
             </h3>
-            
-            <p class="text-sm sm:text-base text-[#4A4643] leading-relaxed">
-              An independent, native iOS application engineered in pure <strong>Swift & SwiftUI</strong>. Built to solve workflow distraction through a two-phase architecture: rapid priority planning followed by dedicated Pomodoro execution.
+
+            <p class="text-sm text-[#4A4643] leading-relaxed">
+              Native iOS productivity app built in pure Swift & SwiftUI. Implements the "Prioritize, Focus, Reflect" workflow—pairing rapid task triage with an active haptic Pomodoro flow. Automated release pipelines deployed via Fastlane and App Store Connect API.
             </p>
 
-            <!-- ARCHITECTURAL HIGHLIGHTS -->
-            <div class="space-y-2.5">
-              <div class="p-3 bg-[#F2EEE8] border-2 border-[#0A0A0A] rounded-xl shadow-brutal-sm text-xs space-y-1">
-                <div class="font-mono font-bold uppercase text-[#0A0A0A] flex items-center gap-1.5">
-                  <span class="text-emerald-600">●</span> Phase 1: Planning Engine
-                </div>
-                <p class="text-[#5A5551] leading-relaxed">
-                  In-memory task state prioritizing top 3 critical items, avoiding infinite task list clutter.
-                </p>
-              </div>
-
-              <div class="p-3 bg-[#F2EEE8] border-2 border-[#0A0A0A] rounded-xl shadow-brutal-sm text-xs space-y-1">
-                <div class="font-mono font-bold uppercase text-[#0A0A0A] flex items-center gap-1.5">
-                  <span class="text-blue-600">●</span> Phase 2: Haptic Flow Timer
-                </div>
-                <p class="text-[#5A5551] leading-relaxed">
-                  Precision CoreAnimation countdown with custom UIImpactFeedback haptic cues and background audio keep-alive.
-                </p>
-              </div>
-
-              <div class="p-3 bg-[#F2EEE8] border-2 border-[#0A0A0A] rounded-xl shadow-brutal-sm text-xs space-y-1">
-                <div class="font-mono font-bold uppercase text-[#0A0A0A] flex items-center gap-1.5">
-                  <span class="text-[#FF7A66]">●</span> CI/CD & Multi-Region Distribution
-                </div>
-                <p class="text-[#5A5551] leading-relaxed">
-                  Automated build signing and screenshot deployment across 39 App Store territories using Fastlane.
-                </p>
-              </div>
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="px-2 py-0.5 bg-[#F4F0EA] border border-[#0A0A0A] rounded text-[11px] font-mono font-medium text-[#0A0A0A]">Swift</span>
+              <span class="px-2 py-0.5 bg-[#F4F0EA] border border-[#0A0A0A] rounded text-[11px] font-mono font-medium text-[#0A0A0A]">SwiftUI</span>
+              <span class="px-2 py-0.5 bg-[#F4F0EA] border border-[#0A0A0A] rounded text-[11px] font-mono font-medium text-[#0A0A0A]">Fastlane</span>
+              <span class="px-2 py-0.5 bg-[#F4F0EA] border border-[#0A0A0A] rounded text-[11px] font-mono font-medium text-[#0A0A0A]">App Store Connect</span>
             </div>
 
-            <div class="flex flex-wrap items-center gap-3 pt-2">
-              <a href="https://apps.apple.com/app/focus-space-task-timer/id6792886499" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#0A0A0A] text-white hover:text-white border-2 border-[#0A0A0A] rounded-xl px-5 py-3 text-xs sm:text-sm font-heading font-extrabold flex items-center gap-2 shadow-brutal">
+            <div class="pt-2">
+              <a href="https://apps.apple.com/app/focus-space-task-timer/id6792886499" target="_blank" rel="noopener noreferrer" class="brutal-btn inline-flex items-center gap-1.5 bg-[#FFD66B] border-[1.5px] border-[#0A0A0A] rounded-xl px-4 py-2 text-xs font-heading font-bold shadow-brutal-sm">
                 <span>View on Apple App Store</span>
-                <span class="font-mono">↗</span>
+                <span class="font-mono text-xs">↗</span>
               </a>
-              <span class="text-xs font-mono font-semibold text-tano-sub">iOS 17.0+ · Pure Swift / SwiftUI</span>
             </div>
           </div>
 
-          <!-- RIGHT: DUAL-SCREEN ENGINEERING MOCKUP -->
-          <div class="relative w-full lg:w-[540px] flex items-center justify-center py-6 sm:py-8">
+          <!-- RIGHT: INTEGRATED DUAL-SCREEN MOCKUP (SUBTLE, CALM) -->
+          <div class="relative flex items-center justify-center shrink-0 py-4">
             
-            <!-- PHONE 1: STEP 1 (PLAN & PRIORITIZE TASKS) -->
+            <!-- PHONE 1: STEP 1 PLAN & PRIORITIZE -->
             <div class="relative z-10 shrink-0">
-              <!-- Callout Pill -->
-              <div class="absolute -top-4 -left-3 sm:-left-6 bg-white border-2 border-[#0A0A0A] rounded-xl px-3 py-1.5 shadow-brutal-sm z-30 text-center -rotate-3">
-                <div class="text-[10px] font-mono uppercase font-bold text-zinc-500">Step 1</div>
-                <div class="text-xs font-heading font-black text-[#0A0A0A]">Plan & Prioritize Tasks</div>
+              <div class="absolute -top-3 -left-2 bg-white border border-[#0A0A0A] rounded-lg px-2 py-0.5 shadow-brutal-sm z-30 text-[10px] font-mono font-bold text-[#0A0A0A] -rotate-2">
+                1 · Plan Tasks
               </div>
-
-              <!-- Pure Phone Screen -->
-              <div class="w-36 sm:w-48 overflow-hidden rounded-[24px] sm:rounded-[30px] border-2 border-[#0A0A0A] shadow-brutal-md transform -rotate-2 hover:rotate-0 transition-transform bg-white">
+              <div class="w-32 sm:w-40 overflow-hidden rounded-[20px] sm:rounded-[24px] border-[1.5px] border-[#0A0A0A] shadow-brutal-sm bg-white">
                 <img src="./assets/focus_space/screen_crop_1.png" alt="Focus Space - Plan & Prioritize Tasks" class="w-full h-auto block" loading="lazy">
               </div>
             </div>
 
-            <!-- HAND-DRAWN LOOP-DE-LOOP ARROW IN CENTER -->
-            <div class="relative z-20 mx-[-10px] sm:mx-[-18px] shrink-0 pointer-events-none">
-              <svg class="w-20 h-16 sm:w-28 sm:h-20" viewBox="0 0 140 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- SUBTLE CONNECTING ARROW -->
+            <div class="relative z-20 mx-[-8px] shrink-0 pointer-events-none">
+              <svg class="w-16 h-12 sm:w-20 sm:h-14" viewBox="0 0 140 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M 15 55 C 40 58, 60 75, 68 45 C 75 15, 52 22, 64 68 C 72 98, 105 68, 130 52" 
-                      stroke="#0A0A0A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                      stroke="#0A0A0A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M 120 45 L 132 52 L 122 62" 
-                      stroke="#0A0A0A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                      stroke="#0A0A0A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
 
-            <!-- PHONE 2: STEP 2 (FOCUS WITH POMODORO) -->
+            <!-- PHONE 2: STEP 2 FOCUS WITH POMODORO -->
             <div class="relative z-10 shrink-0">
-              <!-- Callout Pills -->
-              <div class="absolute -top-5 -right-2 sm:-right-4 bg-white border-2 border-[#0A0A0A] rounded-xl px-3 py-1.5 shadow-brutal-sm z-30 text-center rotate-3">
-                <div class="text-[10px] font-mono uppercase font-bold text-zinc-500">Step 2</div>
-                <div class="text-xs font-heading font-black text-[#0A0A0A]">Focus with Pomodoro</div>
+              <div class="absolute -top-3 -right-2 bg-white border border-[#0A0A0A] rounded-lg px-2 py-0.5 shadow-brutal-sm z-30 text-[10px] font-mono font-bold text-[#0A0A0A] rotate-2">
+                2 · Focus
               </div>
-
-              <div class="absolute -bottom-3 -right-2 sm:-right-4 bg-[#FFD66B] border-2 border-[#0A0A0A] rounded-xl px-2.5 py-1 shadow-brutal-sm z-30 text-center -rotate-2">
-                <div class="text-[11px] font-heading font-black text-[#0A0A0A]">Zero Distractions 🧘</div>
-              </div>
-
-              <!-- Pure Phone Screen -->
-              <div class="w-36 sm:w-48 overflow-hidden rounded-[24px] sm:rounded-[30px] border-2 border-[#0A0A0A] shadow-brutal-md transform rotate-2 hover:rotate-0 transition-transform bg-white">
+              <div class="w-32 sm:w-40 overflow-hidden rounded-[20px] sm:rounded-[24px] border-[1.5px] border-[#0A0A0A] shadow-brutal-sm bg-white">
                 <img src="./assets/focus_space/screen_crop_2.png" alt="Focus Space - Focus with Pomodoro" class="w-full h-auto block" loading="lazy">
               </div>
             </div>
@@ -411,160 +276,104 @@
           </div>
 
         </div>
-
-      </div>
-    </section>
-
-    <!-- SHIPPED PROJECTS SECTION -->
-    <section id="projects" class="space-y-8">
-      
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b-[2.5px] border-[#0A0A0A] pb-4">
-        <div>
-          <span class="pill-badge bg-[#FF7A66] text-white text-[10px] mb-2">PORTFOLIO</span>
-          <h2 class="text-3xl sm:text-4xl font-heading font-black tracking-tight text-[#0A0A0A]">
-            Selected Systems & Prototypes.
-          </h2>
-        </div>
-        <p class="text-xs sm:text-sm font-mono text-[#0A0A0A]">
-          4 SHIPPED PROJECTS
-        </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+      <!-- REMAINING 3 PROJECTS IN CLEAN TWO-COLUMN CARDS -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
 
-        <!-- 1. FOCUS SPACE (NATIVE IOS) -->
-        <div class="brutal-card bg-white border-[2.5px] border-[#0A0A0A] rounded-3xl p-6 sm:p-7 shadow-brutal-lg flex flex-col justify-between space-y-6">
-          <div class="space-y-3">
+        <!-- 2. QUOTECATCH -->
+        <div class="brutal-card bg-white border-[1.5px] border-[#0A0A0A] rounded-2xl p-5 shadow-brutal flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
             <div class="flex items-center justify-between">
-              <span class="pill-badge bg-[#9BE7C6] text-[#0A0A0A] text-[10px] flex items-center gap-1">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-700 animate-pulse"></span>
-                ACTIVE RELEASES
-              </span>
-              <span class="text-xs font-mono font-bold text-tano-sub">APP STORE</span>
+              <span class="pill-badge text-[10px]">B2B SAAS PROTOTYPE</span>
+              <span class="text-[11px] font-mono text-tano-sub">33K+ ETL</span>
             </div>
             
-            <h3 class="text-2xl font-heading font-black text-[#0A0A0A] tracking-tight">
-              Focus Space: Task & Timer
-            </h3>
-            
-            <p class="text-sm text-[#4A4643] leading-relaxed">
-              Native iOS productivity application combining a custom Pomodoro timer with a structured "Prioritize, Focus, Reflect" workflow. Automated release pipelines using Fastlane across 39 App Store territories.
-            </p>
-
-            <div class="flex flex-wrap gap-1.5 pt-2">
-              <span class="px-2.5 py-1 bg-[#F2EEE8] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">Swift</span>
-              <span class="px-2.5 py-1 bg-[#F2EEE8] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">SwiftUI</span>
-              <span class="px-2.5 py-1 bg-[#F2EEE8] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">Fastlane</span>
-              <span class="px-2.5 py-1 bg-[#F2EEE8] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">App Store Connect</span>
-            </div>
-          </div>
-
-          <div class="pt-4 border-t-2 border-[#0A0A0A]/10 flex items-center justify-between">
-            <a href="https://apps.apple.com/app/focus-space-task-timer/id6792886499" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#FFD66B] hover:bg-[#fed053] border-2 border-[#0A0A0A] rounded-xl px-4 py-2 text-xs font-heading font-extrabold flex items-center gap-1.5 shadow-brutal-sm">
-              <span>View on App Store</span>
-              <span class="font-mono">↗</span>
-            </a>
-            <span class="text-[11px] font-mono text-tano-sub">June 2026 – Present</span>
-          </div>
-        </div>
-
-        <!-- 2. QUOTECATCH (B2B SAAS PROTOTYPE) -->
-        <div class="brutal-card bg-white border-[2.5px] border-[#0A0A0A] rounded-3xl p-6 sm:p-7 shadow-brutal-lg flex flex-col justify-between space-y-6">
-          <div class="space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="pill-badge bg-[#9BE7C6] text-[10px]">B2B SAAS PROTOTYPE</span>
-              <span class="text-xs font-mono font-bold text-tano-sub">33,000+ ETL RECORDS</span>
-            </div>
-            
-            <h3 class="text-2xl font-heading font-black text-[#0A0A0A] tracking-tight">
+            <h3 class="text-lg font-heading font-bold text-[#0A0A0A]">
               QuoteCatch
             </h3>
             
-            <p class="text-sm text-[#4A4643] leading-relaxed">
-              Full-stack B2B SaaS prototype with a satellite-powered spatial estimator (Google Maps & Mapbox) that automates roof measurements and lead capture. Built an ETL data pipeline ingesting 33,000+ raw prospect records into indexed PostgreSQL, with Dodo Payments subscription checkout.
+            <p class="text-xs text-[#4A4643] leading-relaxed">
+              Full-stack estimator tool using satellite imagery (Google Maps & Mapbox) to automate roof measurements. Ingested and normalized 33,000+ raw prospect records into PostgreSQL, with Dodo Payments subscription checkout.
             </p>
 
-            <div class="flex flex-wrap gap-1.5 pt-2">
-              <span class="px-2.5 py-1 bg-[#F2EEE8] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">Next.js</span>
-              <span class="px-2.5 py-1 bg-[#F2EEE8] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">TypeScript</span>
-              <span class="px-2.5 py-1 bg-[#F2EEE8] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">PostgreSQL</span>
-              <span class="px-2.5 py-1 bg-[#F2EEE8] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">Supabase</span>
-              <span class="px-2.5 py-1 bg-[#F2EEE8] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">Gemini API</span>
+            <div class="flex flex-wrap gap-1 pt-1">
+              <span class="px-2 py-0.5 bg-[#F4F0EA] border border-[#0A0A0A] rounded text-[10px] font-mono">Next.js</span>
+              <span class="px-2 py-0.5 bg-[#F4F0EA] border border-[#0A0A0A] rounded text-[10px] font-mono">PostgreSQL</span>
+              <span class="px-2 py-0.5 bg-[#F4F0EA] border border-[#0A0A0A] rounded text-[10px] font-mono">Gemini API</span>
             </div>
           </div>
 
-          <div class="pt-4 border-t-2 border-[#0A0A0A]/10 flex items-center justify-between">
-            <a href="https://github.com/labuilds/quotecatch" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#9BE7C6] hover:bg-[#85e1b5] border-2 border-[#0A0A0A] rounded-xl px-4 py-2 text-xs font-heading font-extrabold flex items-center gap-1.5 shadow-brutal-sm">
+          <div class="pt-3 border-t border-zinc-200 flex items-center justify-between text-xs">
+            <a href="https://github.com/labuilds/quotecatch" target="_blank" rel="noopener noreferrer" class="font-heading font-semibold hover:underline flex items-center gap-1">
               <span>GitHub Repo</span>
               <span class="font-mono">↗</span>
             </a>
-            <span class="text-[11px] font-mono text-tano-sub">April 2026 – June 2026</span>
+            <span class="text-tano-sub text-[11px] font-mono">Apr – Jun 2026</span>
           </div>
         </div>
 
-        <!-- 3. AI CONTENT MARKETING SYSTEM (2ND PLACE MOSAIC) -->
-        <div class="brutal-card bg-white border-[2.5px] border-[#0A0A0A] rounded-3xl p-6 sm:p-7 shadow-brutal-lg flex flex-col justify-between space-y-6">
-          <div class="space-y-3">
+        <!-- 3. AI CONTENT MARKETING SYSTEM -->
+        <div class="brutal-card bg-white border-[1.5px] border-[#0A0A0A] rounded-2xl p-5 shadow-brutal flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
             <div class="flex items-center justify-between">
-              <span class="pill-badge bg-[#FFB8D1] text-[10px]">2ND PLACE · MOSAIC BUILDATHON</span>
-              <span class="text-xs font-mono font-bold text-tano-sub">THE PRODUCT FOLKS</span>
+              <span class="pill-badge text-[10px]">2ND PLACE · MOSAIC</span>
+              <span class="text-[11px] font-mono text-tano-sub">HACKATHON</span>
             </div>
             
-            <h3 class="text-2xl font-heading font-black text-[#0A0A0A] tracking-tight">
-              AI Content Marketing System
+            <h3 class="text-lg font-heading font-bold text-[#0A0A0A]">
+              AI Content Engine
             </h3>
             
-            <p class="text-sm text-[#4A4643] leading-relaxed">
-              Multi-agent automation platform that generates and publishes short-form TikTok video campaigns at scale. Handled multi-modal prompt chaining, webhook routing, authentication, and output formatting across Google Gemini API, ElevenLabs voice synthesis, and n8n.
+            <p class="text-xs text-[#4A4643] leading-relaxed">
+              Multi-agent automation system converting natural language prompts into short-form marketing videos. Orchestrated Google Gemini API, ElevenLabs voice synthesis, and n8n webhooks with strict schema validation.
             </p>
 
-            <div class="flex flex-wrap gap-1.5 pt-2">
-              <span class="px-2.5 py-1 bg-[#F2EEE8] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">n8n</span>
-              <span class="px-2.5 py-1 bg-[#F2EEE8] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">ElevenLabs</span>
-              <span class="px-2.5 py-1 bg-[#F2EEE8] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">Gemini API</span>
-              <span class="px-2.5 py-1 bg-[#F2EEE8] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">Google Cloud</span>
+            <div class="flex flex-wrap gap-1 pt-1">
+              <span class="px-2 py-0.5 bg-[#F4F0EA] border border-[#0A0A0A] rounded text-[10px] font-mono">n8n</span>
+              <span class="px-2 py-0.5 bg-[#F4F0EA] border border-[#0A0A0A] rounded text-[10px] font-mono">ElevenLabs</span>
+              <span class="px-2 py-0.5 bg-[#F4F0EA] border border-[#0A0A0A] rounded text-[10px] font-mono">Gemini API</span>
             </div>
           </div>
 
-          <div class="pt-4 border-t-2 border-[#0A0A0A]/10 flex items-center justify-between">
-            <a href="https://www.canva.com/design/DAHYP9L_pSQ/3hMQcbylcldCGDPMOGz_1w/edit" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#FFB8D1] hover:bg-[#ffa4c3] border-2 border-[#0A0A0A] rounded-xl px-4 py-2 text-xs font-heading font-extrabold flex items-center gap-1.5 shadow-brutal-sm">
-              <span>Project Pitch Deck</span>
+          <div class="pt-3 border-t border-zinc-200 flex items-center justify-between text-xs">
+            <a href="https://www.canva.com/design/DAHYP9L_pSQ/3hMQcbylcldCGDPMOGz_1w/edit" target="_blank" rel="noopener noreferrer" class="font-heading font-semibold hover:underline flex items-center gap-1">
+              <span>Pitch Deck</span>
               <span class="font-mono">↗</span>
             </a>
-            <span class="text-[11px] font-mono text-tano-sub">September 2025</span>
+            <span class="text-tano-sub text-[11px] font-mono">Sept 2025</span>
           </div>
         </div>
 
-        <!-- 4. AYU AI (SMART NUTRITION) -->
-        <div class="brutal-card bg-white border-[2.5px] border-[#0A0A0A] rounded-3xl p-6 sm:p-7 shadow-brutal-lg flex flex-col justify-between space-y-6">
-          <div class="space-y-3">
+        <!-- 4. AYU AI -->
+        <div class="brutal-card bg-white border-[1.5px] border-[#0A0A0A] rounded-2xl p-5 shadow-brutal flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
             <div class="flex items-center justify-between">
-              <span class="pill-badge bg-[#A7E3F1] text-[10px]">AI MOBILE APP</span>
-              <span class="text-xs font-mono font-bold text-tano-sub">APP STORE & PLAY STORE</span>
+              <span class="pill-badge text-[10px]">AI MOBILE APP</span>
+              <span class="text-[11px] font-mono text-tano-sub">150+ DLs</span>
             </div>
             
-            <h3 class="text-2xl font-heading font-black text-[#0A0A0A] tracking-tight">
-              Ayu AI: Smart Food Tracker
+            <h3 class="text-lg font-heading font-bold text-[#0A0A0A]">
+              Ayu AI: Food Tracker
             </h3>
             
-            <p class="text-sm text-[#4A4643] leading-relaxed">
-              Mobile food logging application providing personalized Ayurvedic dietary feedback based on individual health conditions. Built with OpenAI API integration, Buildship backend orchestration, Firebase authentication, and FlutterFlow.
+            <p class="text-xs text-[#4A4643] leading-relaxed">
+              Mobile food logging prototype providing personalized Ayurvedic dietary feedback based on individual health conditions. Implemented OpenAI API integrations with Buildship and Firebase backend workflows.
             </p>
 
-            <div class="flex flex-wrap gap-1.5 pt-2">
-              <span class="px-2.5 py-1 bg-[#F2EEE8] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">OpenAI API</span>
-              <span class="px-2.5 py-1 bg-[#F2EEE8] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">FlutterFlow</span>
-              <span class="px-2.5 py-1 bg-[#F2EEE8] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">Firebase</span>
-              <span class="px-2.5 py-1 bg-[#F2EEE8] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">Buildship</span>
+            <div class="flex flex-wrap gap-1 pt-1">
+              <span class="px-2 py-0.5 bg-[#F4F0EA] border border-[#0A0A0A] rounded text-[10px] font-mono">OpenAI API</span>
+              <span class="px-2 py-0.5 bg-[#F4F0EA] border border-[#0A0A0A] rounded text-[10px] font-mono">Firebase</span>
+              <span class="px-2 py-0.5 bg-[#F4F0EA] border border-[#0A0A0A] rounded text-[10px] font-mono">FlutterFlow</span>
             </div>
           </div>
 
-          <div class="pt-4 border-t-2 border-[#0A0A0A]/10 flex items-center justify-between">
-            <a href="https://play.google.com/store/apps/details?id=com.company.foodu&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#A7E3F1] hover:bg-[#8ddcee] border-2 border-[#0A0A0A] rounded-xl px-4 py-2 text-xs font-heading font-extrabold flex items-center gap-1.5 shadow-brutal-sm">
-              <span>Google Play Link</span>
+          <div class="pt-3 border-t border-zinc-200 flex items-center justify-between text-xs">
+            <a href="https://play.google.com/store/apps/details?id=com.company.foodu&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="font-heading font-semibold hover:underline flex items-center gap-1">
+              <span>Google Play</span>
               <span class="font-mono">↗</span>
             </a>
-            <span class="text-[11px] font-mono text-tano-sub">July 2024 – Dec 2025</span>
+            <span class="text-tano-sub text-[11px] font-mono">Jul 2024 – Dec 2025</span>
           </div>
         </div>
 
@@ -572,97 +381,89 @@
     </section>
 
     <!-- PROFESSIONAL EXPERIENCE & FRONTLINE RIGOR -->
-    <section id="experience" class="space-y-8">
+    <section id="experience" class="space-y-6">
       
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b-[2.5px] border-[#0A0A0A] pb-4">
-        <div>
-          <span class="pill-badge bg-[#FFD66B] text-[10px] mb-2">FRONTLINE EXPERIENCE</span>
-          <h2 class="text-3xl sm:text-4xl font-heading font-black tracking-tight text-[#0A0A0A]">
-            Customer & Sales Track Record.
-          </h2>
-        </div>
-        <p class="text-xs sm:text-sm font-mono text-[#0A0A0A]">
-          HIGH-STAKES COMMUNICATION
-        </p>
+      <div class="flex items-baseline justify-between border-b-[1.5px] border-[#0A0A0A] pb-3">
+        <h2 class="text-xs font-mono font-bold tracking-wider uppercase text-[#0A0A0A]">
+          CUSTOMER EXPERIENCE & TECHNICAL SUPPORT
+        </h2>
+        <span class="text-xs font-mono text-tano-sub">FRONTLINE PROOF</span>
       </div>
 
-      <div class="space-y-5">
+      <div class="space-y-4">
 
         <!-- TELUS -->
-        <div class="brutal-card bg-white border-[2.5px] border-[#0A0A0A] rounded-2xl p-6 sm:p-7 shadow-brutal-md">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b-2 border-[#0A0A0A]/10 pb-4 mb-4">
+        <div class="brutal-card bg-white border-[1.5px] border-[#0A0A0A] rounded-xl p-5 sm:p-6 shadow-brutal">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-zinc-200 pb-3 mb-3">
             <div>
               <div class="flex items-center gap-2">
-                <h3 class="text-xl font-heading font-black text-[#0A0A0A]">Telus Communications</h3>
-                <span class="pill-badge bg-[#FFD66B] text-[9px] py-0.5">TOP 3 PRODUCER</span>
+                <h3 class="text-base sm:text-lg font-heading font-bold text-[#0A0A0A]">Telus Communications</h3>
+                <span class="pill-badge text-[9px] py-0.5 bg-[#FFD66B]">#3 IN WESTERN CANADA</span>
               </div>
-              <p class="text-xs font-mono font-medium text-tano-sub mt-0.5">Sales & Customer Service Representative</p>
+              <p class="text-xs font-mono text-tano-sub mt-0.5">Sales & Customer Service Representative</p>
             </div>
-            <div class="text-left sm:text-right font-mono text-xs text-[#0A0A0A]">
-              <span class="font-bold">Nov 2024 – April 2025</span>
-              <span class="block text-tano-sub">Vancouver / Burnaby, BC</span>
+            <div class="text-left sm:text-right font-mono text-xs text-tano-sub">
+              <span>Nov 2024 – April 2025</span> · <span>Burnaby, BC</span>
             </div>
           </div>
           
-          <ul class="space-y-2 text-sm text-[#3A3633]">
-            <li class="flex items-start gap-2.5">
-              <span class="text-[#FF7A66] font-mono font-bold">→</span>
-              <span><strong>#3 in Western Canada:</strong> Delivered over <strong>$150,000+</strong> in quarterly revenue in the first full quarter after onboarding.</span>
+          <ul class="space-y-1.5 text-xs sm:text-sm text-[#3A3633]">
+            <li class="flex items-start gap-2">
+              <span class="text-amber-600 font-bold">→</span>
+              <span><strong>Top 3 Sales Producer in Western Canada:</strong> Generated over <strong>$150,000+</strong> in quarterly revenue in the first full quarter after onboarding.</span>
             </li>
-            <li class="flex items-start gap-2.5">
-              <span class="text-[#FF7A66] font-mono font-bold">→</span>
-              <span><strong>In-Person Technical Triage:</strong> Diagnosed and resolved hardware issues, network setup failures, and billing disputes with walk-in consumers and business accounts, maintaining high customer satisfaction.</span>
+            <li class="flex items-start gap-2">
+              <span class="text-amber-600 font-bold">→</span>
+              <span><strong>In-Person Technical Support & De-escalation:</strong> Diagnosed and resolved hardware issues, network setup failures, and billing disputes for walk-in consumers and business accounts.</span>
             </li>
           </ul>
         </div>
 
         <!-- FREELANCE TECH SUPPORT & CONSULTING -->
-        <div class="brutal-card bg-white border-[2.5px] border-[#0A0A0A] rounded-2xl p-6 sm:p-7 shadow-brutal-md">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b-2 border-[#0A0A0A]/10 pb-4 mb-4">
+        <div class="brutal-card bg-white border-[1.5px] border-[#0A0A0A] rounded-xl p-5 sm:p-6 shadow-brutal">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-zinc-200 pb-3 mb-3">
             <div>
               <div class="flex items-center gap-2">
-                <h3 class="text-xl font-heading font-black text-[#0A0A0A]">Technical Support & Consultant</h3>
-                <span class="pill-badge bg-[#9BE7C6] text-[9px] py-0.5">SELF-EMPLOYED</span>
+                <h3 class="text-base sm:text-lg font-heading font-bold text-[#0A0A0A]">Technical Support & Consultant</h3>
+                <span class="pill-badge text-[9px] py-0.5">SELF-EMPLOYED</span>
               </div>
-              <p class="text-xs font-mono font-medium text-tano-sub mt-0.5">Software Consulting & 1-on-1 Client Guidance</p>
+              <p class="text-xs font-mono text-tano-sub mt-0.5">Software Consulting & 1-on-1 Client Guidance</p>
             </div>
-            <div class="text-left sm:text-right font-mono text-xs text-[#0A0A0A]">
-              <span class="font-bold">Oct 2023 – April 2025</span>
-              <span class="block text-tano-sub">Vancouver, BC</span>
+            <div class="text-left sm:text-right font-mono text-xs text-tano-sub">
+              <span>Oct 2023 – April 2025</span> · <span>Vancouver, BC</span>
             </div>
           </div>
           
-          <ul class="space-y-2 text-sm text-[#3A3633]">
-            <li class="flex items-start gap-2.5">
-              <span class="text-[#9BE7C6] font-mono font-bold">→</span>
-              <span><strong>AI Invoicing Pipeline:</strong> Developed an automated invoice generator using WeWeb, Buildship, Supabase, and OpenAI API to generate and retrieve invoices directly through conversational chat.</span>
+          <ul class="space-y-1.5 text-xs sm:text-sm text-[#3A3633]">
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">→</span>
+              <span><strong>Chat-to-Invoice Automation:</strong> Developed an automated invoice generator using WeWeb, Buildship, Supabase, and OpenAI API to generate and retrieve invoices directly through conversational chat.</span>
             </li>
-            <li class="flex items-start gap-2.5">
-              <span class="text-[#9BE7C6] font-mono font-bold">→</span>
-              <span><strong>Direct Coaching:</strong> Provided tailored computer coaching over 6+ months, empowering non-technical clients to confidently navigate operating systems, security, and web software.</span>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">→</span>
+              <span><strong>1-on-1 Client Coaching:</strong> Provided tailored computer coaching over 6+ months, empowering non-technical clients to confidently navigate operating systems, security, and web software.</span>
             </li>
           </ul>
         </div>
 
         <!-- BEST BUY -->
-        <div class="brutal-card bg-white border-[2.5px] border-[#0A0A0A] rounded-2xl p-6 sm:p-7 shadow-brutal-md">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b-2 border-[#0A0A0A]/10 pb-4 mb-4">
+        <div class="brutal-card bg-white border-[1.5px] border-[#0A0A0A] rounded-xl p-5 sm:p-6 shadow-brutal">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-zinc-200 pb-3 mb-3">
             <div>
               <div class="flex items-center gap-2">
-                <h3 class="text-xl font-heading font-black text-[#0A0A0A]">Best Buy</h3>
-                <span class="pill-badge bg-[#A7E3F1] text-[9px] py-0.5">+50% QUOTA EXCEEDED</span>
+                <h3 class="text-base sm:text-lg font-heading font-bold text-[#0A0A0A]">Best Buy</h3>
+                <span class="pill-badge text-[9px] py-0.5">+50% QUOTA EXCEEDED</span>
               </div>
-              <p class="text-xs font-mono font-medium text-tano-sub mt-0.5">Mobile & Smart Living Advisor</p>
+              <p class="text-xs font-mono text-tano-sub mt-0.5">Mobile & Smart Living Advisor</p>
             </div>
-            <div class="text-left sm:text-right font-mono text-xs text-[#0A0A0A]">
-              <span class="font-bold">June 2023 – Nov 2023</span>
-              <span class="block text-tano-sub">Vancouver, BC</span>
+            <div class="text-left sm:text-right font-mono text-xs text-tano-sub">
+              <span>June 2023 – Nov 2023</span> · <span>Vancouver, BC</span>
             </div>
           </div>
           
-          <ul class="space-y-2 text-sm text-[#3A3633]">
-            <li class="flex items-start gap-2.5">
-              <span class="text-[#A7E3F1] font-mono font-bold">→</span>
+          <ul class="space-y-1.5 text-xs sm:text-sm text-[#3A3633]">
+            <li class="flex items-start gap-2">
+              <span class="text-blue-600 font-bold">→</span>
               <span><strong>Exceeded Targets:</strong> Beat monthly sales quotas by 50% on average, generating $60,000+ in monthly revenue by translating technical device features into clear value for buyers.</span>
             </li>
           </ul>
@@ -672,94 +473,92 @@
     </section>
 
     <!-- EDUCATION & TECH STACK BADGES -->
-    <section id="stack" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <section id="stack" class="grid grid-cols-1 md:grid-cols-3 gap-5">
       
       <!-- EDUCATION -->
-      <div class="brutal-card bg-white border-[2.5px] border-[#0A0A0A] rounded-2xl p-6 shadow-brutal-md space-y-4">
-        <span class="pill-badge bg-[#D8B4FE] text-[10px]">ACADEMIC FOUNDATION</span>
-        <h3 class="text-xl font-heading font-black text-[#0A0A0A]">
+      <div class="brutal-card bg-white border-[1.5px] border-[#0A0A0A] rounded-xl p-5 shadow-brutal space-y-3">
+        <span class="pill-badge text-[10px]">FOUNDATION</span>
+        <h3 class="text-base font-heading font-bold text-[#0A0A0A]">
           University of British Columbia
         </h3>
-        <div class="text-sm text-[#4A4643] space-y-1">
+        <div class="text-xs text-[#4A4643] space-y-1">
           <p class="font-semibold text-[#0A0A0A]">B.Sc. in Computer Science</p>
-          <p class="text-xs font-mono text-tano-sub">Vancouver, BC · Graduated 2023</p>
-          <p class="text-xs text-[#4A4643] pt-2">
-            Algorithms, data structures, software engineering, databases, distributed systems, and computer systems architecture.
+          <p class="text-[11px] font-mono text-tano-sub">Vancouver, BC · Graduated 2023</p>
+          <p class="pt-1 text-[#55514E] leading-relaxed">
+            Algorithms, data structures, software engineering, databases, distributed systems, and computer architecture.
           </p>
         </div>
       </div>
 
       <!-- SKILLS ARSENAL -->
-      <div class="md:col-span-2 brutal-card bg-white border-[2.5px] border-[#0A0A0A] rounded-2xl p-6 shadow-brutal-md space-y-4">
-        <span class="pill-badge bg-[#FFD66B] text-[10px]">TECHNICAL ARSENAL</span>
-        <h3 class="text-xl font-heading font-black text-[#0A0A0A]">
+      <div class="md:col-span-2 brutal-card bg-white border-[1.5px] border-[#0A0A0A] rounded-xl p-5 shadow-brutal space-y-3">
+        <span class="pill-badge text-[10px]">TECHNICAL ARSENAL</span>
+        <h3 class="text-base font-heading font-bold text-[#0A0A0A]">
           Languages, Frameworks & Infrastructure
         </h3>
         
-        <div class="flex flex-wrap gap-2 pt-1">
-          <span class="brutal-btn bg-[#FFD66B] border-2 border-[#0A0A0A] rounded-lg px-3 py-1.5 text-xs font-mono font-bold shadow-brutal-sm">TypeScript</span>
-          <span class="brutal-btn bg-[#9BE7C6] border-2 border-[#0A0A0A] rounded-lg px-3 py-1.5 text-xs font-mono font-bold shadow-brutal-sm">Swift / SwiftUI</span>
-          <span class="brutal-btn bg-[#FFB8D1] border-2 border-[#0A0A0A] rounded-lg px-3 py-1.5 text-xs font-mono font-bold shadow-brutal-sm">Python</span>
-          <span class="brutal-btn bg-[#A7E3F1] border-2 border-[#0A0A0A] rounded-lg px-3 py-1.5 text-xs font-mono font-bold shadow-brutal-sm">React & Next.js</span>
-          <span class="brutal-btn bg-[#D8B4FE] border-2 border-[#0A0A0A] rounded-lg px-3 py-1.5 text-xs font-mono font-bold shadow-brutal-sm">PostgreSQL / Supabase</span>
-          <span class="brutal-btn bg-[#FF7A66] border-2 border-[#0A0A0A] rounded-lg px-3 py-1.5 text-xs font-mono font-bold shadow-brutal-sm">ETL Pipelines</span>
-          <span class="brutal-btn bg-[#FFD66B] border-2 border-[#0A0A0A] rounded-lg px-3 py-1.5 text-xs font-mono font-bold shadow-brutal-sm">Gemini API</span>
-          <span class="brutal-btn bg-[#9BE7C6] border-2 border-[#0A0A0A] rounded-lg px-3 py-1.5 text-xs font-mono font-bold shadow-brutal-sm">OpenAI API</span>
-          <span class="brutal-btn bg-[#FFB8D1] border-2 border-[#0A0A0A] rounded-lg px-3 py-1.5 text-xs font-mono font-bold shadow-brutal-sm">n8n Automation</span>
-          <span class="brutal-btn bg-[#A7E3F1] border-2 border-[#0A0A0A] rounded-lg px-3 py-1.5 text-xs font-mono font-bold shadow-brutal-sm">Fastlane CI/CD</span>
+        <div class="flex flex-wrap gap-1.5 pt-1">
+          <span class="px-2.5 py-1 bg-[#F4F0EA] border border-[#0A0A0A] rounded-lg text-xs font-mono text-[#0A0A0A]">TypeScript</span>
+          <span class="px-2.5 py-1 bg-[#F4F0EA] border border-[#0A0A0A] rounded-lg text-xs font-mono text-[#0A0A0A]">Swift / SwiftUI</span>
+          <span class="px-2.5 py-1 bg-[#F4F0EA] border border-[#0A0A0A] rounded-lg text-xs font-mono text-[#0A0A0A]">Python</span>
+          <span class="px-2.5 py-1 bg-[#F4F0EA] border border-[#0A0A0A] rounded-lg text-xs font-mono text-[#0A0A0A]">React / Next.js</span>
+          <span class="px-2.5 py-1 bg-[#F4F0EA] border border-[#0A0A0A] rounded-lg text-xs font-mono text-[#0A0A0A]">PostgreSQL / Supabase</span>
+          <span class="px-2.5 py-1 bg-[#F4F0EA] border border-[#0A0A0A] rounded-lg text-xs font-mono text-[#0A0A0A]">ETL Pipelines</span>
+          <span class="px-2.5 py-1 bg-[#F4F0EA] border border-[#0A0A0A] rounded-lg text-xs font-mono text-[#0A0A0A]">Google Gemini API</span>
+          <span class="px-2.5 py-1 bg-[#F4F0EA] border border-[#0A0A0A] rounded-lg text-xs font-mono text-[#0A0A0A]">OpenAI API</span>
+          <span class="px-2.5 py-1 bg-[#F4F0EA] border border-[#0A0A0A] rounded-lg text-xs font-mono text-[#0A0A0A]">n8n Automation</span>
+          <span class="px-2.5 py-1 bg-[#F4F0EA] border border-[#0A0A0A] rounded-lg text-xs font-mono text-[#0A0A0A]">Fastlane CI/CD</span>
         </div>
       </div>
 
     </section>
 
-    <!-- FOOTER CALL TO ACTION (GROUNDED, DIRECT) -->
-    <section class="bg-[#0A0A0A] text-white border-[2.5px] border-[#0A0A0A] rounded-3xl p-8 sm:p-12 shadow-brutal-xl space-y-8 relative overflow-hidden">
-      <div class="max-w-2xl space-y-4">
-        <span class="pill-badge bg-[#9BE7C6] text-[#0A0A0A] border-white text-[10px] shadow-[2px_2px_0px_#FFFFFF]">
-          AVAILABLE IMMEDIATELY
+    <!-- FOOTER CALL TO ACTION (CALM, DIRECT) -->
+    <section class="bg-[#0A0A0A] text-white border-2 border-[#0A0A0A] rounded-2xl p-6 sm:p-10 shadow-brutal space-y-6">
+      <div class="max-w-xl space-y-3">
+        <span class="pill-badge bg-white text-[#0A0A0A] text-[10px]">
+          OPEN TO ROLES
         </span>
-        <h2 class="text-3xl sm:text-5xl font-heading font-black tracking-tight text-white leading-tight">
-          Looking for a gritty, high-agency engineer<span class="text-[#FF7A66]">?</span> Let's talk.
+        <h2 class="text-2xl sm:text-3xl font-heading font-bold tracking-tight text-white leading-snug">
+          Looking for a Forward Deployed, Solutions, or Technical Support Engineer?
         </h2>
-        <p class="text-sm sm:text-base text-zinc-300 leading-relaxed">
-          Open to forward deployed engineering, founding engineer, and full-stack product roles where shipping speed, code craft, and direct customer empathy matter.
+        <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed">
+          Available immediately. I bring together technical computer science rigor with real frontline customer problem-solving experience.
         </p>
       </div>
 
       <!-- FOOTER SOCIAL & CONTACT BUTTONS -->
-      <div class="flex flex-wrap items-center gap-3 pt-2">
-        <a href="mailto:la.apps09@gmail.com" class="brutal-btn bg-[#FFD66B] text-[#0A0A0A] border-2 border-white rounded-xl px-5 py-3 text-xs sm:text-sm font-heading font-black flex items-center gap-2 shadow-[3px_3px_0px_#FFFFFF]">
-          <span>Email Me (la.apps09@gmail.com)</span>
-          <span class="font-mono">→</span>
+      <div class="flex flex-wrap items-center gap-2.5 pt-1">
+        <a href="mailto:la.apps09@gmail.com" class="brutal-btn bg-[#FFD66B] text-[#0A0A0A] border border-white rounded-xl px-4 py-2 text-xs font-heading font-bold flex items-center gap-1.5 shadow-[2px_2px_0px_#FFFFFF]">
+          <span>Email (la.apps09@gmail.com)</span>
+          <span class="font-mono text-xs">→</span>
         </a>
-        <a href="https://www.linkedin.com/in/lakshya01/" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#FFB8D1] text-[#0A0A0A] border-2 border-white rounded-xl px-4 py-3 text-xs sm:text-sm font-heading font-black flex items-center gap-1.5 shadow-[3px_3px_0px_#FFFFFF]">
+        <a href="https://www.linkedin.com/in/lakshya01/" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-white text-[#0A0A0A] border border-white rounded-xl px-3.5 py-2 text-xs font-heading font-bold flex items-center gap-1 shadow-[2px_2px_0px_#FFFFFF]">
           <span>LinkedIn</span>
-          <span class="font-mono">↗</span>
+          <span class="font-mono text-xs">↗</span>
         </a>
-        <a href="https://github.com/labuilds" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#9BE7C6] text-[#0A0A0A] border-2 border-white rounded-xl px-4 py-3 text-xs sm:text-sm font-heading font-black flex items-center gap-1.5 shadow-[3px_3px_0px_#FFFFFF]">
+        <a href="https://github.com/labuilds" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-white text-[#0A0A0A] border border-white rounded-xl px-3.5 py-2 text-xs font-heading font-bold flex items-center gap-1 shadow-[2px_2px_0px_#FFFFFF]">
           <span>GitHub</span>
-          <span class="font-mono">↗</span>
+          <span class="font-mono text-xs">↗</span>
         </a>
-        <a href="https://apps.apple.com/app/focus-space-task-timer/id6792886499" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#A7E3F1] text-[#0A0A0A] border-2 border-white rounded-xl px-4 py-3 text-xs sm:text-sm font-heading font-black flex items-center gap-1.5 shadow-[3px_3px_0px_#FFFFFF]">
+        <a href="https://apps.apple.com/app/focus-space-task-timer/id6792886499" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-white text-[#0A0A0A] border border-white rounded-xl px-3.5 py-2 text-xs font-heading font-bold flex items-center gap-1 shadow-[2px_2px_0px_#FFFFFF]">
           <span>App Store</span>
-          <span class="font-mono">↗</span>
+          <span class="font-mono text-xs">↗</span>
         </a>
-        <a href="https://x.com/labuilds" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-white text-[#0A0A0A] border-2 border-white rounded-xl px-4 py-3 text-xs sm:text-sm font-heading font-black flex items-center gap-1.5 shadow-[3px_3px_0px_#FFFFFF]">
-          <span>𝕏 (Twitter)</span>
-          <span class="font-mono">↗</span>
+        <a href="https://x.com/labuilds" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-white text-[#0A0A0A] border border-white rounded-xl px-3.5 py-2 text-xs font-heading font-bold flex items-center gap-1 shadow-[2px_2px_0px_#FFFFFF]">
+          <span>𝕏 / Twitter</span>
+          <span class="font-mono text-xs">↗</span>
         </a>
       </div>
 
-      <div class="pt-6 border-t border-zinc-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs font-mono text-zinc-400">
+      <div class="pt-4 border-t border-zinc-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs font-mono text-zinc-400">
         <div>© 2026 Lakshya Agarwal · UBC Computer Science ('23)</div>
-        <div class="flex items-center gap-4">
-          <a href="#case-study" class="hover:text-white transition">Focus Space</a>
-          <span>•</span>
+        <div class="flex items-center gap-3">
           <a href="#projects" class="hover:text-white transition">Projects</a>
           <span>•</span>
-          <a href="#track-record" class="hover:text-white transition">Capabilities</a>
-          <span>•</span>
           <a href="#experience" class="hover:text-white transition">Experience</a>
+          <span>•</span>
+          <a href="#stack" class="hover:text-white transition">Arsenal</a>
         </div>
       </div>
     </section>
