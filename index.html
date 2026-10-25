@@ -149,9 +149,9 @@
         <a href="#stack" class="hidden sm:inline-flex brutal-btn bg-[#A7E3F1] border-2 border-[#0A0A0A] rounded-[10px] px-3.5 py-1.5 text-xs font-heading font-bold shadow-brutal-sm">
           Arsenal
         </a>
-        <a href="mailto:la.apps09@gmail.com" class="brutal-btn bg-[#FF7A66] hover:bg-[#ff6852] text-[#0A0A0A] border-2 border-[#0A0A0A] rounded-[10px] px-4 py-1.5 text-xs sm:text-sm font-heading font-black tracking-tight flex items-center gap-1.5 shadow-brutal-sm">
+        <a href="#contact" class="brutal-btn bg-[#FF7A66] hover:bg-[#ff6852] text-[#0A0A0A] border-2 border-[#0A0A0A] rounded-[10px] px-4 py-1.5 text-xs sm:text-sm font-heading font-black tracking-tight flex items-center gap-1.5 shadow-brutal-sm">
           <span>Get in touch</span>
-          <span class="font-mono text-xs">→</span>
+          <span class="font-mono text-xs">↓</span>
         </a>
       </div>
 
@@ -192,9 +192,9 @@
 
           <!-- ACTION BUTTONS -->
           <div class="flex flex-wrap items-center gap-3 pt-1">
-            <a href="mailto:la.apps09@gmail.com" class="brutal-btn bg-[#FF7A66] text-white border-2 border-[#0A0A0A] rounded-[10px] px-5 py-2.5 text-xs sm:text-sm font-heading font-black flex items-center gap-2 shadow-brutal-sm">
+            <a href="#contact" class="brutal-btn bg-[#FF7A66] hover:bg-[#ff6852] text-[#0A0A0A] border-2 border-[#0A0A0A] rounded-[10px] px-5 py-2.5 text-xs sm:text-sm font-heading font-black flex items-center gap-2 shadow-brutal-sm">
               <span>Get in touch</span>
-              <span class="font-mono text-xs">→</span>
+              <span class="font-mono text-xs">↓</span>
             </a>
             <a href="#projects" class="brutal-btn bg-[#FFD66B] hover:bg-[#fed053] text-[#0A0A0A] border-2 border-[#0A0A0A] rounded-[10px] px-5 py-2.5 text-xs sm:text-sm font-heading font-extrabold flex items-center gap-2 shadow-brutal-sm">
               <span>View Shipped Work</span>
@@ -733,10 +733,10 @@
 
       <!-- FOOTER SOCIAL & CONTACT BUTTONS (CLEAN SOLID PASTELS, NO WHITE BORDERS LIKE TANO) -->
       <div class="flex flex-wrap items-center gap-2.5 pt-1">
-        <a href="mailto:la.apps09@gmail.com" class="bg-[#FFD66B] text-[#0A0A0A] rounded-[10px] px-4 py-2.5 text-xs font-heading font-black flex items-center gap-1.5 hover:opacity-90 transition">
-          <span>Email (la.apps09@gmail.com)</span>
-          <span class="font-mono text-xs">→</span>
-        </a>
+        <button id="copy-email-btn" onclick="copyEmailToClipboard()" class="bg-[#FFD66B] hover:bg-[#fed053] text-[#0A0A0A] rounded-[10px] px-4 py-2.5 text-xs font-heading font-black flex items-center gap-1.5 hover:opacity-95 transition active:scale-95 cursor-pointer">
+          <span id="copy-email-text">Email (la.apps09@gmail.com)</span>
+          <span id="copy-email-icon" class="font-mono text-xs">📋</span>
+        </button>
         <a href="https://www.linkedin.com/in/lakshya01/" target="_blank" rel="noopener noreferrer" class="bg-[#FFB8D1] text-[#0A0A0A] rounded-[10px] px-4 py-2.5 text-xs font-heading font-black flex items-center gap-1 hover:opacity-90 transition">
           <span>LinkedIn</span>
           <span class="font-mono text-xs">↗</span>
@@ -768,6 +768,46 @@
     </section>
 
   </main>
+
+  <!-- COPY TO CLIPBOARD SCRIPT -->
+  <script>
+    function copyEmailToClipboard() {
+      const email = 'la.apps09@gmail.com';
+      const textEl = document.getElementById('copy-email-text');
+      const iconEl = document.getElementById('copy-email-icon');
+      
+      const onSuccess = () => {
+        textEl.textContent = '✓ Copied (la.apps09@gmail.com)';
+        iconEl.textContent = '✓';
+        setTimeout(() => {
+          textEl.textContent = 'Email (la.apps09@gmail.com)';
+          iconEl.textContent = '📋';
+        }, 2200);
+      };
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(onSuccess).catch(() => {
+          fallbackCopy(email, onSuccess);
+        });
+      } else {
+        fallbackCopy(email, onSuccess);
+      }
+    }
+
+    function fallbackCopy(text, cb) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        cb();
+      } catch (err) {}
+      document.body.removeChild(ta);
+    }
+  </script>
 
 </body>
 </html>
