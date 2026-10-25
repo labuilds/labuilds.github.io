@@ -164,61 +164,124 @@
   <!-- MAIN CONTENT CONTAINER (MATCHING TANO MAX-WIDTH & BREATHING ROOM) -->
   <main class="flex-grow max-w-6xl mx-auto px-5 sm:px-10 w-full space-y-14 sm:space-y-16 pb-20">
 
-    <!-- HERO SECTION -->
-    <section class="space-y-6 pt-2 sm:pt-4">
-      
-      <!-- TOP CONTEXT BADGES -->
-      <div class="flex flex-wrap items-center gap-2.5">
-        <span class="pill-badge bg-[#FFD66B] text-[#0A0A0A]">
-          🎓 UBC Computer Science ('23)
-        </span>
-        <span class="pill-badge bg-[#A7E3F1] text-[#0A0A0A]">
-          📍 Previously Vancouver · Currently India
-        </span>
-        <span class="pill-badge bg-[#9BE7C6] text-[#0A0A0A] flex items-center gap-1.5">
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-700 animate-pulse"></span>
-          Ready to join immediately
-        </span>
-      </div>
-
-      <!-- MAIN HEADLINE -->
-      <div class="space-y-5">
-        <h1 class="text-4xl sm:text-6xl md:text-7xl font-heading font-black tracking-tight text-[#0A0A0A] leading-[0.98]">
-          Software engineer who builds,<br>
-          <span class="inline-block relative">
-            ships, and talks to users<span class="text-[#FF7A66]">.</span>
-            <span class="absolute left-0 bottom-1 sm:bottom-2 w-full h-3 sm:h-4 bg-[#FFD66B] -z-10 -rotate-1 rounded-sm"></span>
-          </span>
-        </h1>
-
-        <!-- SUMMARY COPYWRITING (PRESERVED AS REQUESTED) -->
-        <p class="max-w-2xl text-base sm:text-xl text-[#3A3633] font-medium leading-relaxed">
-          I'm <strong class="font-bold text-[#0A0A0A]">Lakshya Agarwal</strong>. I hold a Computer Science degree from UBC and have hands-on frontline sales experience (<strong class="font-bold text-[#0A0A0A]">#3 in Western Canada at Telus, $150k+ Q1</strong>). I build production iOS apps, full-stack web applications, and data pipelines—pairing engineering rigor with real empathy for how users behave.
-        </p>
-
-        <!-- TARGETED ROLES BOX -->
-        <div class="p-4 sm:p-5 bg-white border-[3px] border-[#0A0A0A] rounded-[14px] shadow-[4px_4px_0px_#0A0A0A] max-w-2xl flex items-start gap-3.5">
-          <span class="text-xl mt-0.5">🎯</span>
-          <div class="text-xs sm:text-sm text-[#4A4643] leading-relaxed">
-            <strong class="font-bold text-[#0A0A0A]">Target Roles:</strong> Open to <span class="font-bold text-[#0A0A0A] bg-[#FFD66B]/50 px-1.5 py-0.5 rounded">Forward Deployed Engineering (FDE)</span>, <span class="font-bold text-[#0A0A0A] bg-[#9BE7C6]/50 px-1.5 py-0.5 rounded">Solutions Engineering</span>, and <span class="font-bold text-[#0A0A0A] bg-[#A7E3F1]/50 px-1.5 py-0.5 rounded">Technical Support / Consulting</span> roles.
+    <!-- HERO SECTION (DIRECTION A: TANO 50/50 SPLIT WITH FLOATING PROOF CARDS) -->
+    <section class="pt-2 sm:pt-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+        
+        <!-- LEFT COLUMN: EDITORIAL HEADLINE & VALUE PROP (TANO BREATHING ROOM) -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- SINGLE CLEAN TOP PILL (MERGES ROLES + AVAILABILITY WITHOUT CLUTTER) -->
+          <div class="inline-flex items-center gap-2 bg-white border-2 border-[#0A0A0A] rounded-full px-3 py-1 shadow-[2px_2px_0px_#0A0A0A] max-w-full">
+            <span class="pill-badge bg-[#9BE7C6] text-[#0A0A0A] text-[9px] py-0.5 px-2 shrink-0">AVAILABLE NOW</span>
+            <span class="text-[11px] sm:text-xs font-mono font-bold tracking-tight text-[#0A0A0A] truncate">FDE · SOLUTIONS ENG · TECH SUPPORT</span>
           </div>
+
+          <!-- MAIN HEADLINE (TIGHT LEADING, HUGE PUNCH) -->
+          <h1 class="text-4xl sm:text-6xl lg:text-[64px] font-heading font-black tracking-tight text-[#0A0A0A] leading-[0.98]">
+            Software engineer who builds,<br>
+            <span class="inline-block relative">
+              ships, and talks to users<span class="text-[#FF7A66]">.</span>
+              <span class="absolute left-0 bottom-1 sm:bottom-2 w-full h-3 sm:h-4 bg-[#FFD66B] -z-10 -rotate-1 rounded-sm"></span>
+            </span>
+          </h1>
+
+          <!-- SUMMARY COPYWRITING (AIRY & ACCESSIBLE) -->
+          <p class="text-base sm:text-lg text-[#3A3633] font-medium leading-relaxed max-w-xl">
+            I'm <strong class="font-bold text-[#0A0A0A]">Lakshya Agarwal</strong>. I hold a Computer Science degree from UBC and have hands-on frontline sales experience (<strong class="font-bold text-[#0A0A0A]">#3 in Western Canada at Telus, $150k+ Q1</strong>). I build production iOS apps, full-stack web applications, and data pipelines—pairing engineering rigor with real empathy for how users behave.
+          </p>
+
+          <!-- ACTION BUTTONS (CLEAN & DIRECT, NO INTERMEDIATE BOXES) -->
+          <div class="flex flex-wrap items-center gap-3 pt-1">
+            <a href="mailto:la.apps09@gmail.com" class="brutal-btn bg-[#FF7A66] text-white border-2 border-[#0A0A0A] rounded-[10px] px-5 py-2.5 text-xs sm:text-sm font-heading font-black flex items-center gap-2 shadow-brutal-sm">
+              <span>Get in touch</span>
+              <span class="font-mono text-xs">→</span>
+            </a>
+            <a href="#projects" class="brutal-btn bg-[#FFD66B] hover:bg-[#fed053] text-[#0A0A0A] border-2 border-[#0A0A0A] rounded-[10px] px-5 py-2.5 text-xs sm:text-sm font-heading font-extrabold flex items-center gap-2 shadow-brutal-sm">
+              <span>View Shipped Work</span>
+              <span class="font-mono text-xs">↓</span>
+            </a>
+            <a href="https://github.com/labuilds" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-white hover:bg-zinc-50 text-[#0A0A0A] border-2 border-[#0A0A0A] rounded-[10px] px-4 py-2.5 text-xs sm:text-sm font-heading font-extrabold flex items-center gap-1.5 shadow-brutal-sm">
+              <span>GitHub</span>
+              <span class="font-mono text-xs">↗</span>
+            </a>
+          </div>
+
         </div>
 
-        <!-- ACTION BUTTONS -->
-        <div class="flex flex-wrap items-center gap-3 pt-2">
-          <a href="https://github.com/labuilds" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#0A0A0A] text-white hover:text-white border-2 border-[#0A0A0A] rounded-[10px] px-5 py-2.5 text-xs sm:text-sm font-heading font-extrabold flex items-center gap-2 shadow-brutal-sm">
-            <span>View Code on GitHub</span>
-            <span class="font-mono text-xs">↗</span>
-          </a>
-          <a href="#projects" class="brutal-btn bg-[#FFD66B] hover:bg-[#fed053] text-[#0A0A0A] border-2 border-[#0A0A0A] rounded-[10px] px-5 py-2.5 text-xs sm:text-sm font-heading font-extrabold flex items-center gap-2 shadow-brutal-sm">
-            <span>View Shipped Work</span>
-            <span class="font-mono text-xs">↓</span>
-          </a>
-          <a href="https://www.linkedin.com/in/lakshya01/" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-white hover:bg-zinc-50 text-[#0A0A0A] border-2 border-[#0A0A0A] rounded-[10px] px-5 py-2.5 text-xs sm:text-sm font-heading font-extrabold flex items-center gap-2 shadow-brutal-sm">
-            <span>LinkedIn</span>
-            <span class="font-mono text-xs">↗</span>
-          </a>
+        <!-- RIGHT COLUMN: TANO-STYLE FLOATING PASTEL STICKY PROOF CARDS -->
+        <div class="lg:col-span-5 flex flex-col items-center lg:items-end space-y-[-10px] sm:space-y-[-16px] pt-6 lg:pt-0">
+          
+          <!-- CARD 1: TELUS FRONTLINE PROOF (PASTEL YELLOW) -->
+          <div class="relative w-full max-w-[320px] bg-[#FFD66B] border-[3px] border-[#0A0A0A] rounded-[14px] p-5 shadow-[8px_8px_0px_#0A0A0A] -rotate-2 hover:rotate-0 transition-transform duration-200 z-10 mr-auto lg:mr-12">
+            <!-- Faux Masking Tape -->
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-5 bg-white/90 border-2 border-[#0A0A0A] rounded-[2px] shadow-sm -rotate-3 pointer-events-none"></div>
+            
+            <div class="flex items-center justify-between pb-2 border-b-2 border-[#0A0A0A]/20">
+              <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-[#0A0A0A]">↑ TELUS · FRONTLINE</span>
+              <span class="pill-badge bg-white text-[#0A0A0A] text-[9px] py-0.5 px-2">TOP PRODUCER</span>
+            </div>
+            
+            <div class="py-2.5">
+              <div class="text-4xl sm:text-5xl font-heading font-black tracking-tight text-[#0A0A0A] leading-none">#3 Producer</div>
+              <p class="text-xs font-medium text-[#2D2A26] mt-1.5 leading-snug">in Western Canada · $150k+ quarterly revenue in first quarter</p>
+            </div>
+            
+            <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-[#0A0A0A]/70 flex items-center justify-between pt-1 border-t-2 border-[#0A0A0A]/15">
+              <span>Sales & Support</span>
+              <span class="font-heading font-black text-xs text-[#0A0A0A]">TELUS</span>
+            </div>
+          </div>
+
+          <!-- CARD 2: FOCUS SPACE (PASTEL MINT) -->
+          <div class="relative w-full max-w-[320px] bg-[#9BE7C6] border-[3px] border-[#0A0A0A] rounded-[14px] p-5 shadow-[8px_8px_0px_#0A0A0A] rotate-2 hover:rotate-0 transition-transform duration-200 z-20 ml-auto lg:translate-x-4">
+            <!-- Faux Masking Tape -->
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-5 bg-white/90 border-2 border-[#0A0A0A] rounded-[2px] shadow-sm rotate-2 pointer-events-none"></div>
+            
+            <div class="flex items-center justify-between pb-2 border-b-2 border-[#0A0A0A]/20">
+              <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-[#0A0A0A]">↑ LIVE IOS APP</span>
+              <span class="pill-badge bg-white text-[#0A0A0A] text-[9px] py-0.5 px-2">39 REGIONS</span>
+            </div>
+            
+            <div class="py-2.5">
+              <div class="text-3xl sm:text-4xl font-heading font-black tracking-tight text-[#0A0A0A] leading-none">Focus Space</div>
+              <p class="text-xs font-medium text-[#2D2A26] mt-1.5 leading-snug">Native iOS app built in Swift & SwiftUI with Fastlane CI/CD</p>
+            </div>
+            
+            <div class="flex items-center justify-between pt-1 border-t-2 border-[#0A0A0A]/15">
+              <span class="text-[10px] font-mono font-bold text-[#0A0A0A]/70 uppercase">Shipped Production</span>
+              <div class="flex items-center gap-1 text-xs font-heading font-black text-[#0A0A0A]">
+                <svg class="h-3.5 w-auto" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/>
+                </svg>
+                <span>App Store</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3: MOSAIC BUILDATHON (PASTEL PINK) -->
+          <div class="relative w-full max-w-[320px] bg-[#FFB8D1] border-[3px] border-[#0A0A0A] rounded-[14px] p-5 shadow-[8px_8px_0px_#0A0A0A] -rotate-1 hover:rotate-0 transition-transform duration-200 z-30 mr-auto lg:mr-6">
+            <!-- Faux Masking Tape -->
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-5 bg-white/90 border-2 border-[#0A0A0A] rounded-[2px] shadow-sm -rotate-2 pointer-events-none"></div>
+            
+            <div class="flex items-center justify-between pb-2 border-b-2 border-[#0A0A0A]/20">
+              <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-[#0A0A0A]">↑ AI HACKATHON</span>
+              <span class="pill-badge bg-white text-[#0A0A0A] text-[9px] py-0.5 px-2">BUILDATHON</span>
+            </div>
+            
+            <div class="py-2.5">
+              <div class="text-4xl sm:text-5xl font-heading font-black tracking-tight text-[#0A0A0A] leading-none">2nd Place</div>
+              <p class="text-xs font-medium text-[#2D2A26] mt-1.5 leading-snug">Multi-agent AI video engine with Google Gemini API & n8n</p>
+            </div>
+            
+            <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-[#0A0A0A]/70 flex items-center justify-between pt-1 border-t-2 border-[#0A0A0A]/15">
+              <span>Autonomous Pipeline</span>
+              <span class="font-heading font-black text-xs text-[#0A0A0A]">MOSAIC AI</span>
+            </div>
+          </div>
+
         </div>
+
       </div>
     </section>
 
