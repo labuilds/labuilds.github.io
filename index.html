@@ -181,8 +181,9 @@
         <span class="pill-badge bg-[#FFD66B] text-[#0A0A0A]">
           ⚡️ UBC CS '23
         </span>
-        <span class="pill-badge bg-[#9BE7C6] text-[#0A0A0A]">
-          📱 Live iOS App on App Store
+        <span class="pill-badge bg-[#9BE7C6] text-[#0A0A0A] flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-700 animate-pulse"></span>
+          📱 Focus Space (Actively Developed & Marketed)
         </span>
         <span class="pill-badge bg-[#FFB8D1] text-[#0A0A0A]">
           🏆 2nd Place Mosaic Buildathon
@@ -307,20 +308,23 @@
       </div>
     </section>
 
-    <!-- NATIVE IOS APP SHOWCASE (AUTHENTIC APP STORE SCREENSHOTS) -->
+    <!-- NATIVE IOS APP SHOWCASE (HERO DUAL-PHONE MOCKUP LIKE REFERENCE) -->
     <section id="showcase" class="space-y-4">
       <div class="bg-[#FFFFFF] border-[2.5px] border-[#0A0A0A] rounded-3xl p-6 sm:p-10 shadow-brutal-lg relative overflow-hidden">
         
-        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
           
           <!-- LEFT: APP OVERVIEW & CALLOUTS -->
-          <div class="space-y-5 max-w-xl">
-            <div class="flex items-center gap-2">
-              <span class="w-3 h-3 rounded-full bg-[#FF7A66] border border-[#0A0A0A]"></span>
-              <span class="w-3 h-3 rounded-full bg-[#FFD66B] border border-[#0A0A0A]"></span>
-              <span class="w-3 h-3 rounded-full bg-[#9BE7C6] border border-[#0A0A0A]"></span>
-              <span class="text-xs font-mono font-bold uppercase tracking-widest text-[#0A0A0A] ml-2">
-                SHIPPED NATIVE IOS APP · APPLE APP STORE
+          <div class="space-y-5 max-w-lg">
+            
+            <!-- ACTIVE DEVELOPMENT & MARKETING BADGE -->
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="pill-badge bg-[#9BE7C6] text-[#0A0A0A] flex items-center gap-1.5 py-1 px-3">
+                <span class="w-2 h-2 rounded-full bg-emerald-700 animate-pulse"></span>
+                ACTIVELY BEING DEVELOPED & MARKETED
+              </span>
+              <span class="pill-badge bg-[#FFD66B] text-[10px]">
+                NATIVE IOS APP
               </span>
             </div>
 
@@ -329,76 +333,100 @@
             </h3>
             
             <p class="text-base text-[#4A4643] leading-relaxed">
-              A distraction-free productivity app built natively in Swift & SwiftUI. Features a dedicated Pomodoro timer paired with the structured <strong>"Prioritize, Focus, Reflect"</strong> workflow to help knowledge workers stay in flow.
+              A distraction-free productivity app built natively in Swift & SwiftUI. <strong>Currently being actively developed and marketed</strong>, iterating rapidly on UX, onboarding flows, and user acquisition across 39 App Store regions.
             </p>
+
+            <!-- METHODOLOGY WORKFLOW -->
+            <div class="p-4 bg-[#F2EEE8] border-2 border-[#0A0A0A] rounded-2xl shadow-brutal-sm space-y-2">
+              <div class="text-xs font-mono font-bold text-[#0A0A0A] uppercase tracking-wider flex items-center gap-2">
+                <span class="text-[#FF7A66]">●</span>
+                <span>The Core Workflow: "Prioritize, Focus, Reflect"</span>
+              </div>
+              <p class="text-xs text-[#5A5551] leading-relaxed">
+                Step 1: Pick your 3 highest-leverage tasks → Step 2: Enter distraction-free 25m Pomodoro flow with native haptics → Step 3: Log reflection history.
+              </p>
+            </div>
 
             <!-- KEY ENGINEERING HIGHLIGHTS -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
-              <div class="p-3.5 bg-[#F2EEE8] border-2 border-[#0A0A0A] rounded-xl shadow-brutal-sm">
+              <div class="p-3 bg-[#F2EEE8] border-2 border-[#0A0A0A] rounded-xl shadow-brutal-sm">
                 <div class="text-xs font-mono font-bold text-[#0A0A0A] uppercase flex items-center gap-1.5">
                   <span class="text-emerald-600">●</span> Swift & SwiftUI
                 </div>
-                <div class="text-xs text-[#4A4643] mt-1 leading-normal">
-                  Native 120Hz frame rates, custom haptics, and zero battery drain.
+                <div class="text-xs text-[#4A4643] mt-0.5 leading-normal">
+                  Native 120Hz frame rates & custom haptic cues.
                 </div>
               </div>
-              <div class="p-3.5 bg-[#F2EEE8] border-2 border-[#0A0A0A] rounded-xl shadow-brutal-sm">
+              <div class="p-3 bg-[#F2EEE8] border-2 border-[#0A0A0A] rounded-xl shadow-brutal-sm">
                 <div class="text-xs font-mono font-bold text-[#0A0A0A] uppercase flex items-center gap-1.5">
                   <span class="text-blue-600">●</span> 39 App Store Regions
                 </div>
-                <div class="text-xs text-[#4A4643] mt-1 leading-normal">
-                  Automated CI/CD with Fastlane & App Store Connect API.
+                <div class="text-xs text-[#4A4643] mt-0.5 leading-normal">
+                  Automated CI/CD with Fastlane deployment.
                 </div>
               </div>
             </div>
 
-            <div class="flex flex-wrap items-center gap-3 pt-3">
+            <div class="flex flex-wrap items-center gap-3 pt-2">
               <a href="https://apps.apple.com/app/focus-space-task-timer/id6792886499" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#0A0A0A] text-white hover:text-white border-2 border-[#0A0A0A] rounded-xl px-5 py-3 text-xs sm:text-sm font-heading font-extrabold flex items-center gap-2 shadow-brutal">
                 <span>View on Apple App Store</span>
                 <span class="font-mono">↗</span>
               </a>
-              <span class="text-xs font-mono font-semibold text-tano-sub">Compatible with iOS 17.0+</span>
+              <span class="text-xs font-mono font-semibold text-tano-sub">iOS 17.0+ · iPhone</span>
             </div>
           </div>
 
-          <!-- RIGHT: AUTHENTIC SCREENSHOT GALLERY (IPHONE FRAMES) -->
-          <div class="w-full lg:w-auto overflow-hidden">
-            <div class="flex items-center gap-4 overflow-x-auto pb-4 pt-2 px-1 screens-tray">
-              
-              <!-- SCREENSHOT 1: FOCUS TIMER -->
-              <div class="relative shrink-0 w-44 sm:w-52 bg-[#0A0A0A] p-2.5 rounded-[28px] border-[2.5px] border-[#0A0A0A] shadow-brutal-md">
-                <div class="overflow-hidden rounded-[20px] bg-black">
-                  <img src="./assets/focus_space/screen_1.webp" alt="Focus Space - Main Focus Timer Screen" class="w-full h-auto object-cover" loading="lazy">
-                </div>
-                <div class="text-center pt-2 text-[10px] font-mono font-bold text-zinc-300 uppercase tracking-wider">
-                  01 · Focus Timer
-                </div>
+          <!-- RIGHT: DUAL-PHONE HERO MOCKUP WITH CONNECTING LOOP ARROW & CALLOUT PILLS -->
+          <div class="relative w-full lg:w-[540px] flex items-center justify-center py-6 sm:py-8">
+            
+            <!-- PHONE 1: STEP 1 PRIORITIZE -->
+            <div class="relative z-10 shrink-0">
+              <!-- Floating Callout Pill -->
+              <div class="absolute -top-4 -left-3 sm:-left-6 bg-white border-2 border-[#0A0A0A] rounded-xl px-3 py-1.5 shadow-brutal-sm z-30 text-center -rotate-3">
+                <div class="text-[10px] font-mono uppercase font-bold text-zinc-500">Step 1</div>
+                <div class="text-xs font-heading font-black text-[#0A0A0A]">Prioritize 3 Tasks</div>
               </div>
 
-              <!-- SCREENSHOT 2: PRIORITIZE -->
-              <div class="relative shrink-0 w-44 sm:w-52 bg-[#0A0A0A] p-2.5 rounded-[28px] border-[2.5px] border-[#0A0A0A] shadow-brutal-md">
-                <div class="overflow-hidden rounded-[20px] bg-black">
-                  <img src="./assets/focus_space/screen_2.webp" alt="Focus Space - Prioritize Tasks" class="w-full h-auto object-cover" loading="lazy">
-                </div>
-                <div class="text-center pt-2 text-[10px] font-mono font-bold text-zinc-300 uppercase tracking-wider">
-                  02 · Task Priority
+              <!-- iPhone Body -->
+              <div class="w-36 sm:w-48 bg-[#0A0A0A] p-2 sm:p-2.5 rounded-[28px] sm:rounded-[36px] border-[2.5px] border-[#0A0A0A] shadow-brutal-md transform -rotate-2 hover:rotate-0 transition-transform">
+                <div class="overflow-hidden rounded-[20px] sm:rounded-[26px] bg-black">
+                  <img src="./assets/focus_space/screen_2.webp" alt="Focus Space - Prioritize Tasks Screen" class="w-full h-auto object-cover" loading="lazy">
                 </div>
               </div>
-
-              <!-- SCREENSHOT 3: REFLECT -->
-              <div class="relative shrink-0 w-44 sm:w-52 bg-[#0A0A0A] p-2.5 rounded-[28px] border-[2.5px] border-[#0A0A0A] shadow-brutal-md hidden sm:block">
-                <div class="overflow-hidden rounded-[20px] bg-black">
-                  <img src="./assets/focus_space/screen_3.webp" alt="Focus Space - Reflect & Flow History" class="w-full h-auto object-cover" loading="lazy">
-                </div>
-                <div class="text-center pt-2 text-[10px] font-mono font-bold text-zinc-300 uppercase tracking-wider">
-                  03 · Reflection & Stats
-                </div>
-              </div>
-
             </div>
-            <div class="text-[11px] font-mono text-zinc-400 text-right pr-2 pt-1 hidden sm:block">
-              ← Scroll to explore screens →
+
+            <!-- HAND-DRAWN LOOP-DE-LOOP ARROW IN CENTER (MATCHING EXAMPLE IMAGE) -->
+            <div class="relative z-20 mx-[-12px] sm:mx-[-20px] shrink-0 pointer-events-none">
+              <svg class="w-20 h-16 sm:w-28 sm:h-20" viewBox="0 0 140 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Playful hand-drawn loop-de-loop curve -->
+                <path d="M 15 55 C 40 58, 60 75, 68 45 C 75 15, 52 22, 64 68 C 72 98, 105 68, 130 52" 
+                      stroke="#0A0A0A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- Arrowhead pointing to Phone 2 -->
+                <path d="M 120 45 L 132 52 L 122 62" 
+                      stroke="#0A0A0A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </div>
+
+            <!-- PHONE 2: STEP 2 FOCUS TIMER -->
+            <div class="relative z-10 shrink-0">
+              <!-- Floating Callout Pills -->
+              <div class="absolute -top-5 -right-2 sm:-right-4 bg-white border-2 border-[#0A0A0A] rounded-xl px-3 py-1.5 shadow-brutal-sm z-30 text-center rotate-3">
+                <div class="text-[10px] font-mono uppercase font-bold text-zinc-500">Step 2 · Flow</div>
+                <div class="text-xs font-heading font-black text-[#0A0A0A]">25:00 Timer</div>
+              </div>
+
+              <div class="absolute -bottom-3 -right-2 sm:-right-4 bg-[#FFD66B] border-2 border-[#0A0A0A] rounded-xl px-2.5 py-1 shadow-brutal-sm z-30 text-center -rotate-2">
+                <div class="text-[11px] font-heading font-black text-[#0A0A0A]">Zero Distractions 🧘</div>
+              </div>
+
+              <!-- iPhone Body -->
+              <div class="w-36 sm:w-48 bg-[#0A0A0A] p-2 sm:p-2.5 rounded-[28px] sm:rounded-[36px] border-[2.5px] border-[#0A0A0A] shadow-brutal-md transform rotate-2 hover:rotate-0 transition-transform">
+                <div class="overflow-hidden rounded-[20px] sm:rounded-[26px] bg-black">
+                  <img src="./assets/focus_space/screen_1.webp" alt="Focus Space - Focus Timer Screen" class="w-full h-auto object-cover" loading="lazy">
+                </div>
+              </div>
+            </div>
+
           </div>
 
         </div>
@@ -427,8 +455,11 @@
         <div class="brutal-card bg-white border-[2.5px] border-[#0A0A0A] rounded-3xl p-6 sm:p-7 shadow-brutal-lg flex flex-col justify-between space-y-6">
           <div class="space-y-3">
             <div class="flex items-center justify-between">
-              <span class="pill-badge bg-[#FFD66B] text-[10px]">NATIVE IOS APP</span>
-              <span class="text-xs font-mono font-bold text-tano-sub">LIVE ON APP STORE</span>
+              <span class="pill-badge bg-[#9BE7C6] text-[#0A0A0A] text-[10px] flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-700 animate-pulse"></span>
+                ACTIVELY DEVELOPED & MARKETED
+              </span>
+              <span class="text-xs font-mono font-bold text-tano-sub">APP STORE</span>
             </div>
             
             <h3 class="text-2xl font-heading font-black text-[#0A0A0A] tracking-tight">
@@ -436,7 +467,7 @@
             </h3>
             
             <p class="text-sm text-[#4A4643] leading-relaxed">
-              Native iOS productivity application combining a custom Pomodoro timer with a structured "Prioritize, Focus, Reflect" workflow. Automated release pipelines using Fastlane and App Store Connect API across 39 territories.
+              Native iOS productivity application combining a custom Pomodoro timer with a structured "Prioritize, Focus, Reflect" workflow. Currently being actively developed and marketed, with automated release pipelines using Fastlane across 39 App Store regions.
             </p>
 
             <div class="flex flex-wrap gap-1.5 pt-2">
