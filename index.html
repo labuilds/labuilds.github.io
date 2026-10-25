@@ -18,7 +18,7 @@
         extend: {
           colors: {
             tano: {
-              bg: '#F2EEE8',
+              bg: '#FBF4E0',
               card: '#FFFFFF',
               ink: '#0A0A0A',
               sub: '#4A4643',
@@ -54,7 +54,7 @@
     }
     
     body {
-      background-color: #F2EEE8;
+      background-color: #FBF4E0;
       color: #0A0A0A;
       font-family: 'Inter', system-ui, sans-serif;
       text-rendering: optimizeLegibility;
@@ -90,7 +90,7 @@
 
     /* Subtle radial dot grain from Tano */
     .bg-grain {
-      background-image: radial-gradient(rgba(10, 10, 10, 0.045) 1.5px, transparent 1.5px);
+      background-image: radial-gradient(rgba(10, 10, 10, 0.04) 1.5px, transparent 1.5px);
       background-size: 18px 18px;
     }
 
@@ -106,28 +106,36 @@
       text-transform: uppercase;
       box-shadow: 2px 2px 0px #0A0A0A;
     }
+
+    /* Continuous Seamless Infinite Ticker */
+    @keyframes tano-marquee {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: tano-marquee 28s linear infinite;
+    }
+    .marquee-track:hover {
+      animation-play-state: paused;
+    }
   </style>
 </head>
-<body class="min-h-screen bg-[#F2EEE8] text-[#0A0A0A] flex flex-col bg-grain antialiased selection:bg-[#0A0A0A] selection:text-[#FFD66B]">
+<body class="min-h-screen bg-[#FBF4E0] text-[#0A0A0A] flex flex-col bg-grain antialiased selection:bg-[#0A0A0A] selection:text-[#FFD66B]">
 
-  <!-- FLOATING NAVBAR -->
+  <!-- FLOATING NAVBAR (ROUNDED PILL LIKE TANO) -->
   <header class="sticky top-4 z-50 px-4 sm:px-6 max-w-6xl mx-auto w-full mb-8 sm:mb-12">
-    <nav class="bg-[#FFFFFF] border-[3px] border-[#0A0A0A] rounded-[14px] px-5 py-3.5 flex items-center justify-between shadow-[4px_4px_0px_#0A0A0A]">
+    <nav class="bg-[#FFFFFF] border-[3px] border-[#0A0A0A] rounded-full px-6 sm:px-8 py-3 flex items-center justify-between shadow-[5px_5px_0px_#0A0A0A]">
       
-      <!-- LOGO / IDENTITY -->
-      <a href="/" class="flex items-center gap-2.5 group">
-        <span class="w-8 h-8 rounded-[8px] bg-[#FFD66B] border-2 border-[#0A0A0A] flex items-center justify-center font-heading font-black text-xs shadow-brutal-sm group-hover:rotate-6 transition-transform">
-          LA
-        </span>
-        <div class="flex flex-col">
-          <span class="font-heading font-black text-base tracking-tight leading-none text-[#0A0A0A]">
-            labuilds<span class="text-[#FF7A66]">.</span>
-          </span>
-          <span class="text-[10px] font-mono font-medium text-tano-sub uppercase tracking-wider flex items-center gap-1.5 mt-0.5">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-            open to roles
-          </span>
-        </div>
+      <!-- LOGO / IDENTITY (JUST LABUILD) -->
+      <a href="/" class="font-heading font-black text-2xl tracking-tight text-[#0A0A0A] hover:opacity-80 transition-opacity">
+        labuild
       </a>
 
       <!-- NAVIGATION LINKS AS RETRO PASTEL PILLS -->
@@ -214,47 +222,107 @@
       </div>
     </section>
 
-    <!-- OPTION B: VERIFIED TRACK RECORD & AFFILIATIONS BAR (EXACT TANO PADDING & STYLING) -->
+    <!-- DYNAMIC LOGO / BRAND MARQUEE (EXACT TANO CONTINUOUS TICKER) -->
     <section class="pt-2">
-      <div class="bg-white border-[3px] border-[#0A0A0A] rounded-[14px] p-5 sm:py-6 sm:px-9 shadow-[6px_6px_0px_#0A0A0A] flex flex-col md:flex-row items-start md:items-center justify-between gap-6 overflow-hidden">
+      <div class="bg-white border-[3px] border-[#0A0A0A] rounded-[14px] py-5 px-4 sm:px-6 shadow-[6px_6px_0px_#0A0A0A] overflow-hidden relative">
         
-        <!-- LEFT LABEL (TANO EDITORIAL STYLE) -->
-        <div class="font-heading font-black text-xs sm:text-[13px] tracking-[0.08em] uppercase text-[#0A0A0A] shrink-0 flex items-center gap-2">
-          <span>Verified Track Record & Affiliations</span>
-          <span class="font-mono text-base text-[#FF7A66]">→</span>
-        </div>
+        <!-- Subtle edge gradient masks for smooth entry/exit fade -->
+        <div class="pointer-events-none absolute left-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-r from-white to-transparent z-10"></div>
+        <div class="pointer-events-none absolute right-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-l from-white to-transparent z-10"></div>
 
-        <!-- RIGHT LOGO ROW (MONOCHROME & CRISP) -->
-        <div class="flex-1 w-full flex items-center justify-between sm:justify-end gap-6 sm:gap-10 overflow-x-auto py-1 opacity-90 grayscale hover:grayscale-0 transition-all duration-300">
+        <!-- Continuous Infinite Marquee Track -->
+        <div class="marquee-track flex items-center gap-12 sm:gap-16">
           
+          <!-- SET 1 -->
+          <!-- Google -->
+          <div class="flex items-center gap-2 shrink-0 opacity-75 hover:opacity-100 transition-opacity">
+            <span class="font-sans font-normal text-xl tracking-tight text-[#1A1614]">Google</span>
+          </div>
+
           <!-- UBC -->
-          <div class="flex items-center gap-2 shrink-0 group" title="University of British Columbia (B.Sc. CS '23)">
-            <span class="font-heading font-black text-2xl tracking-tighter text-[#0A0A0A]">UBC</span>
-            <span class="hidden lg:inline text-[10px] font-mono text-zinc-500 font-semibold border-l-2 border-zinc-300 pl-2">Alum '23</span>
+          <div class="flex items-center gap-2 shrink-0 opacity-75 hover:opacity-100 transition-opacity">
+            <span class="font-serif font-normal text-lg tracking-wider text-[#1A1614]">UBC</span>
+            <span class="text-xs font-mono text-[#7A7570] font-normal tracking-normal border-l border-zinc-300 pl-2">Alum '23</span>
           </div>
 
           <!-- TELUS -->
-          <div class="flex items-center gap-2 shrink-0 group" title="Telus Communications (#3 Producer Western Canada)">
-            <span class="font-heading font-black text-xl tracking-tight text-[#0A0A0A]">TELUS</span>
-            <span class="hidden lg:inline text-[10px] font-mono text-zinc-500 font-semibold border-l-2 border-zinc-300 pl-2">Top 3 Sales</span>
+          <div class="flex items-center gap-2 shrink-0 opacity-75 hover:opacity-100 transition-opacity">
+            <span class="font-sans font-medium text-base tracking-widest text-[#1A1614]">TELUS</span>
+            <span class="text-xs font-mono text-[#7A7570] font-normal tracking-normal border-l border-zinc-300 pl-2">Top 3 Sales</span>
           </div>
 
-          <!-- APPLE APP STORE -->
-          <div class="flex items-center gap-2 shrink-0 group" title="Apple App Store (Focus Space Live Across 39 Regions)">
-            <svg class="h-6 w-6 text-[#0A0A0A]" viewBox="0 0 170 170" fill="currentColor">
+          <!-- Apple App Store -->
+          <div class="flex items-center gap-1.5 shrink-0 opacity-75 hover:opacity-100 transition-opacity">
+            <svg class="h-5 w-5 text-[#1A1614]" viewBox="0 0 170 170" fill="currentColor">
               <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.04-7.67-7.88-11.95-14.52-6.19-9.59-11.04-20.73-14.55-33.41-3.51-12.68-5.27-24.49-5.27-35.43 0-14.7 3.73-26.83 11.19-36.4 7.46-9.57 16.74-14.49 27.84-14.76 5.11 0 10.66 1.34 16.65 4.02 5.99 2.68 9.94 4.08 11.85 4.21 2.29-.26 6.44-1.68 12.46-4.26 6.02-2.58 11.24-3.8 15.66-3.66 11.53.53 20.89 4.67 28.08 12.43-10.12 6.13-15.11 14.61-14.97 25.44.13 8.39 3.32 15.41 9.56 21.06 6.24 5.65 13.56 8.92 21.96 9.81-2.01 6.02-4.42 12.18-7.22 18.49zM119.22 33.64c0-7.39 2.66-14.44 7.98-21.15 5.32-6.71 11.83-11.24 19.53-13.59.39 1.45.59 2.84.59 4.18 0 7.39-2.73 14.36-8.19 20.91-5.46 6.55-12.04 11.05-19.74 13.51-.05-1.34-.17-2.63-.17-3.86z"/>
             </svg>
-            <span class="text-xs font-heading font-black tracking-tight">App Store</span>
+            <span class="font-sans font-medium text-sm tracking-tight text-[#1A1614]">App Store</span>
           </div>
 
           <!-- BEST BUY -->
-          <div class="flex items-center gap-1 shrink-0 group" title="Best Buy (Mobile & Smart Living Advisor)">
-            <span class="font-heading font-black text-lg tracking-tighter text-[#0A0A0A]">BEST BUY</span>
+          <div class="flex items-center shrink-0 opacity-75 hover:opacity-100 transition-opacity">
+            <span class="font-sans font-semibold text-base tracking-tight text-[#1A1614]">BEST BUY</span>
           </div>
 
-          <!-- GOOGLE -->
-          <div class="flex items-center gap-1 shrink-0 group" title="Google Cloud & Gemini API">
-            <span class="font-heading font-black text-xl tracking-tight text-[#0A0A0A]">Google</span>
+          <!-- Swift & SwiftUI -->
+          <div class="flex items-center shrink-0 opacity-75 hover:opacity-100 transition-opacity">
+            <span class="font-sans font-medium text-sm tracking-wide text-[#1A1614]">Swift & SwiftUI</span>
+          </div>
+
+          <!-- Gemini API -->
+          <div class="flex items-center shrink-0 opacity-75 hover:opacity-100 transition-opacity">
+            <span class="font-sans font-medium text-base tracking-tight text-[#1A1614]">Gemini API</span>
+          </div>
+
+          <!-- PostgreSQL -->
+          <div class="flex items-center shrink-0 opacity-75 hover:opacity-100 transition-opacity">
+            <span class="font-mono font-medium text-xs tracking-wider text-[#1A1614] uppercase">PostgreSQL</span>
+          </div>
+
+          <!-- SET 2 (DUPLICATE FOR SEAMLESS 100% INFINITE LOOP) -->
+          <!-- Google -->
+          <div class="flex items-center gap-2 shrink-0 opacity-75 hover:opacity-100 transition-opacity">
+            <span class="font-sans font-normal text-xl tracking-tight text-[#1A1614]">Google</span>
+          </div>
+
+          <!-- UBC -->
+          <div class="flex items-center gap-2 shrink-0 opacity-75 hover:opacity-100 transition-opacity">
+            <span class="font-serif font-normal text-lg tracking-wider text-[#1A1614]">UBC</span>
+            <span class="text-xs font-mono text-[#7A7570] font-normal tracking-normal border-l border-zinc-300 pl-2">Alum '23</span>
+          </div>
+
+          <!-- TELUS -->
+          <div class="flex items-center gap-2 shrink-0 opacity-75 hover:opacity-100 transition-opacity">
+            <span class="font-sans font-medium text-base tracking-widest text-[#1A1614]">TELUS</span>
+            <span class="text-xs font-mono text-[#7A7570] font-normal tracking-normal border-l border-zinc-300 pl-2">Top 3 Sales</span>
+          </div>
+
+          <!-- Apple App Store -->
+          <div class="flex items-center gap-1.5 shrink-0 opacity-75 hover:opacity-100 transition-opacity">
+            <svg class="h-5 w-5 text-[#1A1614]" viewBox="0 0 170 170" fill="currentColor">
+              <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.04-7.67-7.88-11.95-14.52-6.19-9.59-11.04-20.73-14.55-33.41-3.51-12.68-5.27-24.49-5.27-35.43 0-14.7 3.73-26.83 11.19-36.4 7.46-9.57 16.74-14.49 27.84-14.76 5.11 0 10.66 1.34 16.65 4.02 5.99 2.68 9.94 4.08 11.85 4.21 2.29-.26 6.44-1.68 12.46-4.26 6.02-2.58 11.24-3.8 15.66-3.66 11.53.53 20.89 4.67 28.08 12.43-10.12 6.13-15.11 14.61-14.97 25.44.13 8.39 3.32 15.41 9.56 21.06 6.24 5.65 13.56 8.92 21.96 9.81-2.01 6.02-4.42 12.18-7.22 18.49zM119.22 33.64c0-7.39 2.66-14.44 7.98-21.15 5.32-6.71 11.83-11.24 19.53-13.59.39 1.45.59 2.84.59 4.18 0 7.39-2.73 14.36-8.19 20.91-5.46 6.55-12.04 11.05-19.74 13.51-.05-1.34-.17-2.63-.17-3.86z"/>
+            </svg>
+            <span class="font-sans font-medium text-sm tracking-tight text-[#1A1614]">App Store</span>
+          </div>
+
+          <!-- BEST BUY -->
+          <div class="flex items-center shrink-0 opacity-75 hover:opacity-100 transition-opacity">
+            <span class="font-sans font-semibold text-base tracking-tight text-[#1A1614]">BEST BUY</span>
+          </div>
+
+          <!-- Swift & SwiftUI -->
+          <div class="flex items-center shrink-0 opacity-75 hover:opacity-100 transition-opacity">
+            <span class="font-sans font-medium text-sm tracking-wide text-[#1A1614]">Swift & SwiftUI</span>
+          </div>
+
+          <!-- Gemini API -->
+          <div class="flex items-center shrink-0 opacity-75 hover:opacity-100 transition-opacity">
+            <span class="font-sans font-medium text-base tracking-tight text-[#1A1614]">Gemini API</span>
+          </div>
+
+          <!-- PostgreSQL -->
+          <div class="flex items-center shrink-0 opacity-75 hover:opacity-100 transition-opacity">
+            <span class="font-mono font-medium text-xs tracking-wider text-[#1A1614] uppercase">PostgreSQL</span>
           </div>
 
         </div>
@@ -295,10 +363,10 @@
             </p>
 
             <div class="flex flex-wrap gap-1.5 pt-1">
-              <span class="px-2.5 py-1 bg-[#F2EEE8] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">Swift</span>
-              <span class="px-2.5 py-1 bg-[#F2EEE8] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">SwiftUI</span>
-              <span class="px-2.5 py-1 bg-[#F2EEE8] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">Fastlane</span>
-              <span class="px-2.5 py-1 bg-[#F2EEE8] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">App Store Connect</span>
+              <span class="px-2.5 py-1 bg-[#FBF4E0] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">Swift</span>
+              <span class="px-2.5 py-1 bg-[#FBF4E0] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">SwiftUI</span>
+              <span class="px-2.5 py-1 bg-[#FBF4E0] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">Fastlane</span>
+              <span class="px-2.5 py-1 bg-[#FBF4E0] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">App Store Connect</span>
             </div>
 
             <div class="pt-2">
@@ -367,9 +435,9 @@
             </p>
 
             <div class="flex flex-wrap gap-1 pt-1">
-              <span class="px-2 py-0.5 bg-[#F2EEE8] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">Next.js</span>
-              <span class="px-2 py-0.5 bg-[#F2EEE8] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">PostgreSQL</span>
-              <span class="px-2 py-0.5 bg-[#F2EEE8] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">Gemini API</span>
+              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">Next.js</span>
+              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">PostgreSQL</span>
+              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">Gemini API</span>
             </div>
           </div>
 
@@ -399,9 +467,9 @@
             </p>
 
             <div class="flex flex-wrap gap-1 pt-1">
-              <span class="px-2 py-0.5 bg-[#F2EEE8] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">n8n</span>
-              <span class="px-2 py-0.5 bg-[#F2EEE8] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">ElevenLabs</span>
-              <span class="px-2 py-0.5 bg-[#F2EEE8] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">Gemini API</span>
+              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">n8n</span>
+              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">ElevenLabs</span>
+              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">Gemini API</span>
             </div>
           </div>
 
@@ -431,9 +499,9 @@
             </p>
 
             <div class="flex flex-wrap gap-1 pt-1">
-              <span class="px-2 py-0.5 bg-[#F2EEE8] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">OpenAI API</span>
-              <span class="px-2 py-0.5 bg-[#F2EEE8] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">Firebase</span>
-              <span class="px-2 py-0.5 bg-[#F2EEE8] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">FlutterFlow</span>
+              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">OpenAI API</span>
+              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">Firebase</span>
+              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">FlutterFlow</span>
             </div>
           </div>
 
