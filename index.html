@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lakshya Agarwal — Forward Deployed & Solutions Engineer</title>
-  <meta name="description" content="Lakshya Agarwal — UBC Computer Science graduate ('23), iOS developer (Focus Space), and former #3 sales producer at Telus. Open to Forward Deployed Engineering, Solutions Engineering, and Technical Support roles.">
+  <title>Lakshya Agarwal — Product Engineer</title>
+  <meta name="description" content="Lakshya Agarwal — UBC Computer Science graduate ('23), iOS developer (Focus Space), and former #3 sales producer at Telus. Open to Product Engineering, Forward Deployed Engineering, and Solutions Engineering roles.">
   
   <!-- Fonts: Inter Tight (Headings) + Inter (Body) + JetBrains Mono (Badges) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -125,6 +125,16 @@
     .marquee-track:hover {
       animation-play-state: paused;
     }
+
+    /* Ensure scrolled sections land comfortably below floating sticky navbar */
+    section[id] {
+      scroll-margin-top: 6rem;
+    }
+    @media (min-width: 640px) {
+      section[id] {
+        scroll-margin-top: 7rem;
+      }
+    }
   </style>
 </head>
 <body class="min-h-screen bg-[#FBF4E0] text-[#0A0A0A] flex flex-col bg-grain antialiased selection:bg-[#0A0A0A] selection:text-[#FFD66B]">
@@ -177,7 +187,7 @@
 
           <!-- MAIN HEADLINE (3 CLEAN LINES, TIGHT LEADING) -->
           <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-heading font-black tracking-tight text-[#0A0A0A] leading-[1.05]">
-            Software engineer<br>
+            Product engineer<br>
             who builds, ships,<br>
             <span class="inline-block relative">
               and talks to users<span class="text-[#FF7A66]">.</span>
@@ -186,8 +196,8 @@
           </h1>
 
           <!-- SUMMARY COPYWRITING (AUTHENTIC & DIRECT) -->
-          <p class="text-sm sm:text-base text-[#3A3633] font-medium leading-relaxed max-w-xl">
-            I'm <strong class="font-bold text-[#0A0A0A]">Lakshya Agarwal</strong>. I build mobile, web apps, and custom tools & automations. Having worked in sales before, I'm just as comfortable talking through requirements with users as I am building out an app.
+          <p class="text-sm sm:text-base text-[#3A3633] font-medium leading-relaxed max-w-2xl">
+            I'm <strong class="font-bold text-[#0A0A0A]">Lakshya Agarwal</strong>. I build mobile, web apps, custom tools & automations. Having worked in sales before, I'm just as comfortable talking through requirements with users and supporting them as I am building out an app.
           </p>
 
           <!-- ACTION BUTTONS -->
@@ -368,14 +378,14 @@
     </section>
 
     <!-- SHIPPED PROJECTS SECTION -->
-    <section id="projects" class="space-y-6">
+    <section id="projects" class="scroll-mt-24 sm:scroll-mt-28 space-y-6">
       
       <div class="flex items-baseline justify-between border-b-2 border-[#0A0A0A] pb-3">
         <h2 class="text-xs font-mono font-bold tracking-wider uppercase text-[#0A0A0A] flex items-center gap-2">
           <span class="pill-badge bg-[#FF7A66] text-white text-[9px] py-0.5">PORTFOLIO</span>
           <span>SHIPPED PROJECTS & SYSTEMS</span>
         </h2>
-        <span class="text-xs font-mono text-tano-sub">4 LIVE BUILDS</span>
+        <span class="text-xs font-mono text-tano-sub">4 SHIPPED PROJECTS</span>
       </div>
 
       <!-- 1. FEATURED FLAGSHIP: FOCUS SPACE (NATIVE IOS WITH INTEGRATED DUAL-SCREEN MOCKUP) -->
@@ -455,42 +465,10 @@
       <!-- REMAINING 3 PROJECTS IN 3-COLUMN CARDS -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
 
-        <!-- 2. QUOTECATCH -->
+        <!-- 2. AI CONTENT MARKETING SYSTEM (ACTIVE) -->
         <div class="brutal-card bg-white border-[3px] border-[#0A0A0A] rounded-[14px] p-5 sm:p-6 shadow-[5px_5px_0px_#0A0A0A] flex flex-col justify-between space-y-4">
-          <div class="space-y-2.5">
-            <div class="flex items-center justify-between">
-              <span class="pill-badge bg-[#9BE7C6] text-[10px]">B2B SAAS PROTOTYPE</span>
-              <span class="text-[11px] font-mono font-bold text-tano-sub">33K+ ETL</span>
-            </div>
-            
-            <h3 class="text-xl font-heading font-black text-[#0A0A0A]">
-              QuoteCatch
-            </h3>
-            
-            <p class="text-xs sm:text-[13px] text-[#4A4643] leading-relaxed">
-              Full-stack estimator tool using satellite imagery (Google Maps & Mapbox) to automate roof measurements. Ingested and normalized 33,000+ raw prospect records into PostgreSQL, with Dodo Payments subscription checkout.
-            </p>
-
-            <div class="flex flex-wrap gap-1 pt-1">
-              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">Next.js</span>
-              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">PostgreSQL</span>
-              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">Gemini API</span>
-            </div>
-          </div>
-
-          <div class="pt-3 border-t-2 border-[#0A0A0A]/10 flex items-center justify-between text-xs">
-            <a href="https://github.com/labuilds/quotecatch" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#9BE7C6] border-2 border-[#0A0A0A] rounded-[8px] px-2.5 py-1 font-heading font-bold flex items-center gap-1 shadow-brutal-sm">
-              <span>GitHub Repo</span>
-              <span class="font-mono">↗</span>
-            </a>
-            <span class="text-tano-sub text-[11px] font-mono">Apr – Jun 2026</span>
-          </div>
-        </div>
-
-        <!-- 3. AI CONTENT MARKETING SYSTEM -->
-        <div class="brutal-card bg-white border-[3px] border-[#0A0A0A] rounded-[14px] p-5 sm:p-6 shadow-[5px_5px_0px_#0A0A0A] flex flex-col justify-between space-y-4">
-          <div class="space-y-2.5">
-            <div class="flex items-center justify-between">
+          <div class="space-y-3 flex-grow flex flex-col">
+            <div class="flex items-center justify-between gap-2">
               <span class="pill-badge bg-[#FFB8D1] text-[10px]">2ND PLACE · MOSAIC</span>
               <span class="text-[11px] font-mono font-bold text-tano-sub">HACKATHON</span>
             </div>
@@ -500,10 +478,14 @@
             </h3>
             
             <p class="text-xs sm:text-[13px] text-[#4A4643] leading-relaxed">
-              Multi-agent automation system converting natural language prompts into short-form marketing videos. Orchestrated Google Gemini API, ElevenLabs voice synthesis, and n8n webhooks with strict schema validation.
+              An automated pipeline that turns simple text prompts into ready-to-post short videos. Chains Gemini to draft scripts, ElevenLabs for voiceovers, and n8n to stitch everything together.
             </p>
 
-            <div class="flex flex-wrap gap-1 pt-1">
+            <p class="text-[11px] font-mono text-tano-sub leading-normal">
+              Built over 5 days for Mosaic Buildathon · Awarded 2nd place out of 50+ competing teams.
+            </p>
+
+            <div class="flex flex-wrap gap-1 pt-1 mt-auto">
               <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">n8n</span>
               <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">ElevenLabs</span>
               <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">Gemini API</span>
@@ -519,10 +501,56 @@
           </div>
         </div>
 
-        <!-- 4. AYU AI -->
-        <div class="brutal-card bg-white border-[3px] border-[#0A0A0A] rounded-[14px] p-5 sm:p-6 shadow-[5px_5px_0px_#0A0A0A] flex flex-col justify-between space-y-4">
-          <div class="space-y-2.5">
-            <div class="flex items-center justify-between">
+        <!-- 3. QUOTECATCH (INACTIVE) -->
+        <div class="relative brutal-card bg-white border-[3px] border-[#0A0A0A] rounded-[14px] p-5 sm:p-6 shadow-[5px_5px_0px_#0A0A0A] flex flex-col justify-between space-y-4">
+          <!-- FLOATING INACTIVE TAG -->
+          <div class="absolute -top-3.5 right-6 bg-[#FBF4E0] border-2 border-[#0A0A0A] rounded-lg px-2.5 py-0.5 shadow-brutal-sm text-[10px] font-mono font-bold text-[#0A0A0A] z-20">
+            INACTIVE
+          </div>
+
+          <div class="space-y-3 flex-grow flex flex-col">
+            <div class="flex items-center justify-between gap-2">
+              <span class="pill-badge bg-[#9BE7C6] text-[10px]">B2B SAAS PROTOTYPE</span>
+              <span class="text-[11px] font-mono font-bold text-tano-sub">33K+ ETL</span>
+            </div>
+            
+            <h3 class="text-xl font-heading font-black text-[#0A0A0A]">
+              QuoteCatch
+            </h3>
+            
+            <p class="text-xs sm:text-[13px] text-[#4A4643] leading-relaxed">
+              Full-stack estimator tool using satellite imagery (Google Maps & Mapbox) to automate roof measurements with PostgreSQL and Dodo Payments checkout.
+            </p>
+
+            <p class="text-[11px] font-mono text-tano-sub leading-normal">
+              Automated geospatial roof estimates and normalized 33,000+ property records with live billing.
+            </p>
+
+            <div class="flex flex-wrap gap-1 pt-1 mt-auto">
+              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">Next.js</span>
+              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">PostgreSQL</span>
+              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">Gemini API</span>
+            </div>
+          </div>
+
+          <div class="pt-3 border-t-2 border-[#0A0A0A]/10 flex items-center justify-between text-xs">
+            <a href="https://github.com/labuilds/quotecatch" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#9BE7C6] border-2 border-[#0A0A0A] rounded-[8px] px-2.5 py-1 font-heading font-bold flex items-center gap-1 shadow-brutal-sm text-[#0A0A0A]">
+              <span>GitHub Repo</span>
+              <span class="font-mono">↗</span>
+            </a>
+            <span class="text-tano-sub text-[11px] font-mono">Apr – Jun 2024</span>
+          </div>
+        </div>
+
+        <!-- 4. AYU AI (INACTIVE) -->
+        <div class="relative brutal-card bg-white border-[3px] border-[#0A0A0A] rounded-[14px] p-5 sm:p-6 shadow-[5px_5px_0px_#0A0A0A] flex flex-col justify-between space-y-4">
+          <!-- FLOATING INACTIVE TAG -->
+          <div class="absolute -top-3.5 right-6 bg-[#FBF4E0] border-2 border-[#0A0A0A] rounded-lg px-2.5 py-0.5 shadow-brutal-sm text-[10px] font-mono font-bold text-[#0A0A0A] z-20">
+            INACTIVE
+          </div>
+
+          <div class="space-y-3 flex-grow flex flex-col">
+            <div class="flex items-center justify-between gap-2">
               <span class="pill-badge bg-[#A7E3F1] text-[10px]">AI MOBILE APP</span>
               <span class="text-[11px] font-mono font-bold text-tano-sub">150+ DLs</span>
             </div>
@@ -532,10 +560,14 @@
             </h3>
             
             <p class="text-xs sm:text-[13px] text-[#4A4643] leading-relaxed">
-              Mobile food logging prototype providing personalized Ayurvedic dietary feedback based on individual health conditions. Implemented OpenAI API integrations with Buildship and Firebase backend workflows.
+              Mobile food logging prototype providing personalized Ayurvedic dietary feedback based on individual health conditions using OpenAI API and Firebase.
             </p>
 
-            <div class="flex flex-wrap gap-1 pt-1">
+            <p class="text-[11px] font-mono text-tano-sub leading-normal">
+              Shipped to Google Play with 150+ downloads, delivering real-time personalized AI diet feedback.
+            </p>
+
+            <div class="flex flex-wrap gap-1 pt-1 mt-auto">
               <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">OpenAI API</span>
               <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">Firebase</span>
               <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold">FlutterFlow</span>
@@ -543,11 +575,11 @@
           </div>
 
           <div class="pt-3 border-t-2 border-[#0A0A0A]/10 flex items-center justify-between text-xs">
-            <a href="https://play.google.com/store/apps/details?id=com.company.foodu&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#A7E3F1] border-2 border-[#0A0A0A] rounded-[8px] px-2.5 py-1 font-heading font-bold flex items-center gap-1 shadow-brutal-sm">
+            <a href="https://play.google.com/store/apps/details?id=com.company.foodu&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="brutal-btn bg-[#A7E3F1] border-2 border-[#0A0A0A] rounded-[8px] px-2.5 py-1 font-heading font-bold flex items-center gap-1 shadow-brutal-sm text-[#0A0A0A]">
               <span>Google Play</span>
               <span class="font-mono">↗</span>
             </a>
-            <span class="text-tano-sub text-[11px] font-mono">Jul 2024 – Dec 2025</span>
+            <span class="text-tano-sub text-[11px] font-mono">Jul 2024 – Dec 2024</span>
           </div>
         </div>
 
@@ -555,7 +587,7 @@
     </section>
 
     <!-- PROFESSIONAL EXPERIENCE SECTION -->
-    <section id="experience" class="space-y-6">
+    <section id="experience" class="scroll-mt-24 sm:scroll-mt-28 space-y-6">
       
       <div class="flex items-baseline justify-between border-b-2 border-[#0A0A0A] pb-3">
         <h2 class="text-xs font-mono font-bold tracking-wider uppercase text-[#0A0A0A] flex items-center gap-2">
@@ -648,7 +680,7 @@
     </section>
 
     <!-- EDUCATION & TECH STACK BADGES -->
-    <section id="stack" class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
+    <section id="stack" class="scroll-mt-24 sm:scroll-mt-28 grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
       
       <!-- EDUCATION -->
       <div class="brutal-card bg-white border-[3px] border-[#0A0A0A] rounded-[14px] p-5 sm:p-6 shadow-[5px_5px_0px_#0A0A0A] space-y-3">
@@ -689,7 +721,7 @@
     </section>
 
     <!-- FOOTER CLOSING SECTION (TANO STYLE: DARK CARD WITH CORAL SHADOW & BORDERLESS SOLID PASTEL BUTTONS) -->
-    <section id="contact" class="relative bg-[#0A0A0A] text-white border-[3px] border-[#0A0A0A] rounded-[14px] p-6 sm:p-10 shadow-[8px_8px_0px_#FF7A66] space-y-6">
+    <section id="contact" class="scroll-mt-24 sm:scroll-mt-28 relative bg-[#0A0A0A] text-white border-[3px] border-[#0A0A0A] rounded-[14px] p-6 sm:p-10 shadow-[8px_8px_0px_#FF7A66] space-y-6">
       <!-- Faux Coral Masking Tape on Top -->
       <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-5 bg-[#FF7A66] border-2 border-[#0A0A0A] rounded-[2px] shadow-sm -rotate-1 pointer-events-none"></div>
 
