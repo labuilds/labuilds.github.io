@@ -388,58 +388,53 @@
         <span class="text-xs font-mono text-tano-sub">5 SHIPPED PROJECTS</span>
       </div>
 
-      <!-- 1. FEATURED FLAGSHIP: FOCUS SPACE (NATIVE IOS WITH INTEGRATED DUAL-SCREEN MOCKUP) -->
-      <div class="brutal-card bg-white border-[3px] border-[#0A0A0A] rounded-[14px] p-6 sm:p-9 shadow-[6px_6px_0px_#0A0A0A]">
-        <div class="flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-10">
+      <!-- TOP ROW: 2 FEATURED NATIVE IOS FLAGSHIPS (2-COLUMN GRID, BALANCED COMPACT SPACE) -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6">
+
+        <!-- 1. FEATURED FLAGSHIP: FOCUS SPACE -->
+        <div class="brutal-card bg-white border-[3px] border-[#0A0A0A] rounded-[14px] p-5 sm:p-7 shadow-[5px_5px_0px_#0A0A0A] flex flex-col justify-between space-y-5">
           
-          <!-- LEFT: PROJECT CONTEXT -->
-          <div class="space-y-4 max-w-lg">
-            <div class="flex items-center gap-2">
+          <!-- TOP: PROJECT CONTEXT -->
+          <div class="space-y-3">
+            <div class="flex items-center justify-between gap-2">
               <span class="pill-badge bg-[#9BE7C6] text-[#0A0A0A] text-[10px]">
                 NATIVE IOS · APP STORE
               </span>
               <span class="text-xs font-mono font-bold text-tano-sub">39 REGIONS</span>
             </div>
 
-            <h3 class="text-2xl sm:text-3xl font-heading font-black text-[#0A0A0A] tracking-tight">
+            <h3 class="text-xl sm:text-2xl font-heading font-black text-[#0A0A0A] tracking-tight">
               Focus Space: Task & Timer
             </h3>
 
-            <p class="text-sm sm:text-base text-[#4A4643] leading-relaxed">
+            <p class="text-xs sm:text-sm text-[#4A4643] leading-relaxed">
               Native iOS productivity app built in pure Swift & SwiftUI. Implements the "Prioritize, Focus, Reflect" workflow—pairing rapid task triage with an active haptic Pomodoro flow. Automated release pipelines deployed via Fastlane and App Store Connect API.
             </p>
 
-            <div class="flex flex-wrap gap-1.5 pt-1">
-              <span class="px-2.5 py-1 bg-[#FBF4E0] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">Swift</span>
-              <span class="px-2.5 py-1 bg-[#FBF4E0] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">SwiftUI</span>
-              <span class="px-2.5 py-1 bg-[#FBF4E0] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">Fastlane</span>
-              <span class="px-2.5 py-1 bg-[#FBF4E0] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">App Store Connect</span>
-            </div>
-
-            <div class="pt-2">
-              <a href="https://apps.apple.com/app/focus-space-task-timer/id6792886499" target="_blank" rel="noopener noreferrer" class="brutal-btn inline-flex items-center gap-2 bg-[#FFD66B] hover:bg-[#fed053] border-2 border-[#0A0A0A] rounded-[10px] px-4 py-2 text-xs font-heading font-extrabold shadow-brutal-sm text-[#0A0A0A]">
-                <span>View on Apple App Store</span>
-                <span class="font-mono text-xs">↗</span>
-              </a>
+            <div class="flex flex-wrap gap-1.5 pt-0.5">
+              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold text-[#0A0A0A]">Swift</span>
+              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold text-[#0A0A0A]">SwiftUI</span>
+              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold text-[#0A0A0A]">Fastlane</span>
+              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold text-[#0A0A0A]">App Store Connect</span>
             </div>
           </div>
 
-          <!-- RIGHT: INTEGRATED DUAL-SCREEN MOCKUP -->
-          <div class="relative flex items-center justify-center shrink-0 py-4">
+          <!-- INTEGRATED DUAL-SCREEN MOCKUP -->
+          <div class="relative flex items-center justify-center pt-2 pb-1">
             
             <!-- PHONE 1: STEP 1 PLAN & PRIORITIZE -->
             <div class="relative z-10 shrink-0">
-              <div class="absolute -top-3.5 -left-2 bg-white border-2 border-[#0A0A0A] rounded-lg px-2.5 py-0.5 shadow-brutal-sm z-30 text-[10px] font-mono font-bold text-[#0A0A0A] -rotate-2">
+              <div class="absolute -top-3 -left-1.5 bg-white border-2 border-[#0A0A0A] rounded-md px-2 py-0.5 shadow-brutal-sm z-30 text-[9px] font-mono font-bold text-[#0A0A0A] -rotate-2">
                 1 · Plan Tasks
               </div>
-              <div class="w-32 sm:w-44 overflow-hidden rounded-[20px] sm:rounded-[24px] border-2 border-[#0A0A0A] shadow-brutal-sm bg-white">
+              <div class="w-24 sm:w-28 overflow-hidden rounded-[16px] sm:rounded-[20px] border-2 border-[#0A0A0A] shadow-brutal-sm bg-white">
                 <img src="./assets/focus_space/screen_crop_1.png" alt="Focus Space - Plan & Prioritize Tasks" class="w-full h-auto block" loading="lazy">
               </div>
             </div>
 
             <!-- SUBTLE CONNECTING ARROW -->
-            <div class="relative z-20 mx-[-8px] sm:mx-[-12px] shrink-0 pointer-events-none">
-              <svg class="w-16 h-12 sm:w-22 sm:h-16" viewBox="0 0 140 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="relative z-20 mx-[-6px] sm:mx-[-8px] shrink-0 pointer-events-none">
+              <svg class="w-12 h-10 sm:w-14 sm:h-12" viewBox="0 0 140 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M 15 55 C 40 58, 60 75, 68 45 C 75 15, 52 22, 64 68 C 72 98, 105 68, 130 52" 
                       stroke="#0A0A0A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M 120 45 L 132 52 L 122 62" 
@@ -449,72 +444,71 @@
 
             <!-- PHONE 2: STEP 2 FOCUS WITH POMODORO -->
             <div class="relative z-10 shrink-0">
-              <div class="absolute -top-3.5 -right-2 bg-white border-2 border-[#0A0A0A] rounded-lg px-2.5 py-0.5 shadow-brutal-sm z-30 text-[10px] font-mono font-bold text-[#0A0A0A] rotate-2">
+              <div class="absolute -top-3 -right-1.5 bg-white border-2 border-[#0A0A0A] rounded-md px-2 py-0.5 shadow-brutal-sm z-30 text-[9px] font-mono font-bold text-[#0A0A0A] rotate-2">
                 2 · Focus
               </div>
-              <div class="w-32 sm:w-44 overflow-hidden rounded-[20px] sm:rounded-[24px] border-2 border-[#0A0A0A] shadow-brutal-sm bg-white">
+              <div class="w-24 sm:w-28 overflow-hidden rounded-[16px] sm:rounded-[20px] border-2 border-[#0A0A0A] shadow-brutal-sm bg-white">
                 <img src="./assets/focus_space/screen_crop_2.png" alt="Focus Space - Focus with Pomodoro" class="w-full h-auto block" loading="lazy">
               </div>
             </div>
 
           </div>
 
-        </div>
-      </div>
+          <!-- BOTTOM ACTION -->
+          <div class="pt-3 border-t-2 border-[#0A0A0A]/10 flex items-center justify-between">
+            <a href="https://apps.apple.com/app/focus-space-task-timer/id6792886499" target="_blank" rel="noopener noreferrer" class="brutal-btn inline-flex items-center gap-1.5 bg-[#FFD66B] hover:bg-[#fed053] border-2 border-[#0A0A0A] rounded-[8px] px-3.5 py-1.5 text-xs font-heading font-extrabold shadow-brutal-sm text-[#0A0A0A]">
+              <span>View on App Store</span>
+              <span class="font-mono text-xs">↗</span>
+            </a>
+            <span class="text-tano-sub text-[11px] font-mono font-bold">iOS 17+ · Live</span>
+          </div>
 
-      <!-- 2. FEATURED FLAGSHIP: TOSS (NATIVE IOS WITH INTEGRATED DUAL-SCREEN MOCKUP) -->
-      <div class="brutal-card bg-white border-[3px] border-[#0A0A0A] rounded-[14px] p-6 sm:p-9 shadow-[6px_6px_0px_#0A0A0A]">
-        <div class="flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-10">
+        </div>
+
+        <!-- 2. FEATURED FLAGSHIP: TOSS -->
+        <div class="brutal-card bg-white border-[3px] border-[#0A0A0A] rounded-[14px] p-5 sm:p-7 shadow-[5px_5px_0px_#0A0A0A] flex flex-col justify-between space-y-5">
           
-          <!-- LEFT: PROJECT CONTEXT -->
-          <div class="space-y-4 max-w-lg">
-            <div class="flex items-center gap-2">
+          <!-- TOP: PROJECT CONTEXT -->
+          <div class="space-y-3">
+            <div class="flex items-center justify-between gap-2">
               <span class="pill-badge bg-[#A7E3F1] text-[#0A0A0A] text-[10px]">
                 NATIVE IOS · APP STORE
               </span>
               <span class="text-xs font-mono font-bold text-tano-sub">100% ON-DEVICE PRIVACY</span>
             </div>
 
-            <h3 class="text-2xl sm:text-3xl font-heading font-black text-[#0A0A0A] tracking-tight">
+            <h3 class="text-xl sm:text-2xl font-heading font-black text-[#0A0A0A] tracking-tight">
               Receipt & Return Tracker: Toss
             </h3>
 
-            <p class="text-sm sm:text-base text-[#4A4643] leading-relaxed">
-              Native iOS utility built in Swift & SwiftUI to track return deadlines before they expire. Uses Apple Vision framework for fast, offline receipt scanning and text recognition—automatically extracting store names, purchase dates, itemized lines, and totals. Designed with a strict privacy-first architecture: zero cloud uploads, no account registration, and 100% on-device data storage.
+            <p class="text-xs sm:text-sm text-[#4A4643] leading-relaxed">
+              Native iOS utility built in Swift & SwiftUI to track return deadlines before they expire. Uses Apple Vision framework for fast offline receipt scanning—extracting stores, dates, and item lines. Zero cloud uploads, no account registration, and 100% on-device privacy.
             </p>
 
-            <div class="flex flex-wrap gap-1.5 pt-1">
-              <span class="px-2.5 py-1 bg-[#FBF4E0] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">Swift</span>
-              <span class="px-2.5 py-1 bg-[#FBF4E0] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">SwiftUI</span>
-              <span class="px-2.5 py-1 bg-[#FBF4E0] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">Apple Vision (OCR)</span>
-              <span class="px-2.5 py-1 bg-[#FBF4E0] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">Offline-First</span>
-              <span class="px-2.5 py-1 bg-[#FBF4E0] border border-[#0A0A0A] rounded-md text-[11px] font-mono font-bold text-[#0A0A0A]">On-Device Privacy</span>
-            </div>
-
-            <div class="pt-2">
-              <a href="https://apps.apple.com/us/app/receipt-return-tracker-toss/id6829488621" target="_blank" rel="noopener noreferrer" class="brutal-btn inline-flex items-center gap-2 bg-[#FFD66B] hover:bg-[#fed053] border-2 border-[#0A0A0A] rounded-[10px] px-4 py-2 text-xs font-heading font-extrabold shadow-brutal-sm text-[#0A0A0A]">
-                <span>View on Apple App Store</span>
-                <span class="font-mono text-xs">↗</span>
-              </a>
+            <div class="flex flex-wrap gap-1.5 pt-0.5">
+              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold text-[#0A0A0A]">Swift</span>
+              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold text-[#0A0A0A]">SwiftUI</span>
+              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold text-[#0A0A0A]">Apple Vision (OCR)</span>
+              <span class="px-2 py-0.5 bg-[#FBF4E0] border border-[#0A0A0A] rounded text-[10px] font-mono font-bold text-[#0A0A0A]">Offline-First</span>
             </div>
           </div>
 
-          <!-- RIGHT: INTEGRATED DUAL-SCREEN MOCKUP -->
-          <div class="relative flex items-center justify-center shrink-0 py-4">
+          <!-- INTEGRATED DUAL-SCREEN MOCKUP -->
+          <div class="relative flex items-center justify-center pt-2 pb-1">
             
             <!-- PHONE 1: STEP 1 DIGITAL RECEIPT VAULT -->
             <div class="relative z-10 shrink-0">
-              <div class="absolute -top-3.5 -left-2 bg-white border-2 border-[#0A0A0A] rounded-lg px-2.5 py-0.5 shadow-brutal-sm z-30 text-[10px] font-mono font-bold text-[#0A0A0A] -rotate-2">
+              <div class="absolute -top-3 -left-1.5 bg-white border-2 border-[#0A0A0A] rounded-md px-2 py-0.5 shadow-brutal-sm z-30 text-[9px] font-mono font-bold text-[#0A0A0A] -rotate-2">
                 1 · Receipt Vault
               </div>
-              <div class="w-32 sm:w-44 overflow-hidden rounded-[20px] sm:rounded-[24px] border-2 border-[#0A0A0A] shadow-brutal-sm bg-white">
-                <img src="./assets/toss/crop_vault.png" alt="Toss - Digital Receipt Vault" class="w-full h-auto block">
+              <div class="w-24 sm:w-28 overflow-hidden rounded-[16px] sm:rounded-[20px] border-2 border-[#0A0A0A] shadow-brutal-sm bg-white">
+                <img src="./assets/toss/crop_vault.png" alt="Toss - Digital Receipt Vault" class="w-full h-auto block" loading="lazy">
               </div>
             </div>
 
             <!-- SUBTLE CONNECTING ARROW -->
-            <div class="relative z-20 mx-[-8px] sm:mx-[-12px] shrink-0 pointer-events-none">
-              <svg class="w-16 h-12 sm:w-22 sm:h-16" viewBox="0 0 140 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="relative z-20 mx-[-6px] sm:mx-[-8px] shrink-0 pointer-events-none">
+              <svg class="w-12 h-10 sm:w-14 sm:h-12" viewBox="0 0 140 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M 15 55 C 40 58, 60 75, 68 45 C 75 15, 52 22, 64 68 C 72 98, 105 68, 130 52" 
                       stroke="#0A0A0A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M 120 45 L 132 52 L 122 62" 
@@ -524,17 +518,27 @@
 
             <!-- PHONE 2: STEP 2 RETURN BARCODE & DETAILS -->
             <div class="relative z-10 shrink-0">
-              <div class="absolute -top-3.5 -right-2 bg-white border-2 border-[#0A0A0A] rounded-lg px-2.5 py-0.5 shadow-brutal-sm z-30 text-[10px] font-mono font-bold text-[#0A0A0A] rotate-2">
+              <div class="absolute -top-3 -right-1.5 bg-white border-2 border-[#0A0A0A] rounded-md px-2 py-0.5 shadow-brutal-sm z-30 text-[9px] font-mono font-bold text-[#0A0A0A] rotate-2">
                 2 · Barcode & Details
               </div>
-              <div class="w-32 sm:w-44 overflow-hidden rounded-[20px] sm:rounded-[24px] border-2 border-[#0A0A0A] shadow-brutal-sm bg-white">
-                <img src="./assets/toss/crop_details.png" alt="Toss - Return Barcode & Receipt Details" class="w-full h-auto block">
+              <div class="w-24 sm:w-28 overflow-hidden rounded-[16px] sm:rounded-[20px] border-2 border-[#0A0A0A] shadow-brutal-sm bg-white">
+                <img src="./assets/toss/crop_details.png" alt="Toss - Return Barcode & Receipt Details" class="w-full h-auto block" loading="lazy">
               </div>
             </div>
 
           </div>
 
+          <!-- BOTTOM ACTION -->
+          <div class="pt-3 border-t-2 border-[#0A0A0A]/10 flex items-center justify-between">
+            <a href="https://apps.apple.com/us/app/receipt-return-tracker-toss/id6829488621" target="_blank" rel="noopener noreferrer" class="brutal-btn inline-flex items-center gap-1.5 bg-[#FFD66B] hover:bg-[#fed053] border-2 border-[#0A0A0A] rounded-[8px] px-3.5 py-1.5 text-xs font-heading font-extrabold shadow-brutal-sm text-[#0A0A0A]">
+              <span>View on App Store</span>
+              <span class="font-mono text-xs">↗</span>
+            </a>
+            <span class="text-tano-sub text-[11px] font-mono font-bold">iOS 17+ · Live</span>
+          </div>
+
         </div>
+
       </div>
 
       <!-- REMAINING 3 PROJECTS IN 3-COLUMN CARDS -->
