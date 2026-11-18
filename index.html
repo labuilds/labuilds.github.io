@@ -137,7 +137,7 @@
     }
   </style>
 </head>
-<body class="min-h-screen bg-[#FBF4E0] text-[#0A0A0A] flex flex-col bg-grain antialiased selection:bg-[#0A0A0A] selection:text-[#FFD66B]">
+<body class="min-h-screen bg-[#FBF4E0] text-[#0A0A0A] flex flex-col bg-grain antialiased overflow-x-hidden selection:bg-[#0A0A0A] selection:text-[#FFD66B]">
 
   <!-- FLOATING NAVBAR (ROUNDED PILL LIKE TANO) -->
   <header class="sticky top-4 z-50 px-4 sm:px-6 max-w-6xl mx-auto w-full mb-8 sm:mb-12">
@@ -243,7 +243,7 @@
           </div>
 
           <!-- CARD 2: FOCUS SPACE (PASTEL MINT - SHIFTED FURTHER RIGHT LIKE TANO) -->
-          <div class="relative w-full max-w-[280px] sm:max-w-[300px] bg-[#9BE7C6] border-[3px] border-[#0A0A0A] rounded-[14px] p-4 sm:p-5 shadow-[8px_8px_0px_#0A0A0A] rotate-2 hover:rotate-0 transition-transform duration-200 z-20 self-end -mt-10 sm:-mt-12 translate-x-3 sm:translate-x-8 lg:translate-x-20">
+          <div class="relative w-full max-w-[280px] sm:max-w-[300px] bg-[#9BE7C6] border-[3px] border-[#0A0A0A] rounded-[14px] p-4 sm:p-5 shadow-[8px_8px_0px_#0A0A0A] rotate-2 hover:rotate-0 transition-transform duration-200 z-20 self-end -mt-10 sm:-mt-12 sm:translate-x-4 lg:translate-x-0">
             <!-- Faux Masking Tape (Top Right like Tano) -->
             <div class="absolute -top-3 right-6 w-16 h-5 bg-white/90 border-2 border-[#0A0A0A] rounded-[2px] shadow-sm rotate-6 pointer-events-none"></div>
             
@@ -423,18 +423,18 @@
           <div class="relative flex items-center justify-center pt-2 pb-1">
             
             <!-- PHONE 1: STEP 1 PLAN & PRIORITIZE -->
-            <div class="relative z-10 shrink-0">
-              <div class="absolute -top-3 -left-1 sm:-left-2 bg-white border border-[#0A0A0A] sm:border-2 rounded-md px-2 py-0.5 shadow-[2px_2px_0px_#0A0A0A] z-30 text-[9px] sm:text-[10px] font-mono font-bold text-[#0A0A0A] whitespace-nowrap -rotate-2">
+            <div class="relative z-10 shrink-0 w-[100px] sm:w-28 md:w-32">
+              <div class="absolute -top-3 -left-1 sm:-left-2 bg-white border border-[#0A0A0A] sm:border-2 rounded-md px-1.5 sm:px-2 py-0.5 shadow-[2px_2px_0px_#0A0A0A] z-30 text-[9px] sm:text-[10px] font-mono font-bold text-[#0A0A0A] whitespace-nowrap -rotate-2">
                 1 · Tasks
               </div>
-              <div class="w-26 sm:w-32 overflow-hidden rounded-[18px] sm:rounded-[22px] border-2 border-[#0A0A0A] shadow-brutal-sm bg-white">
+              <div class="w-full overflow-hidden rounded-[16px] sm:rounded-[20px] border-2 border-[#0A0A0A] shadow-brutal-sm bg-white">
                 <img src="./assets/focus_space/screen_crop_1.png" alt="Focus Space - Plan & Prioritize Tasks" class="w-full h-auto block" loading="lazy">
               </div>
             </div>
 
             <!-- SUBTLE CONNECTING ARROW -->
-            <div class="relative z-20 mx-[-6px] sm:mx-[-8px] shrink-0 pointer-events-none">
-              <svg class="w-12 h-10 sm:w-14 sm:h-12" viewBox="0 0 140 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="relative z-20 mx-[-4px] sm:mx-[-6px] shrink-0 pointer-events-none">
+              <svg class="w-8 h-7 sm:w-12 sm:h-10" viewBox="0 0 140 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M 15 55 C 40 58, 60 75, 68 45 C 75 15, 52 22, 64 68 C 72 98, 105 68, 130 52" 
                       stroke="#0A0A0A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M 120 45 L 132 52 L 122 62" 
@@ -443,11 +443,11 @@
             </div>
 
             <!-- PHONE 2: STEP 2 FOCUS WITH POMODORO -->
-            <div class="relative z-10 shrink-0">
-              <div class="absolute -top-3 -right-1 sm:-right-2 bg-white border border-[#0A0A0A] sm:border-2 rounded-md px-2 py-0.5 shadow-[2px_2px_0px_#0A0A0A] z-30 text-[9px] sm:text-[10px] font-mono font-bold text-[#0A0A0A] whitespace-nowrap rotate-2">
+            <div class="relative z-10 shrink-0 w-[100px] sm:w-28 md:w-32">
+              <div class="absolute -top-3 -right-1 sm:-right-2 bg-white border border-[#0A0A0A] sm:border-2 rounded-md px-1.5 sm:px-2 py-0.5 shadow-[2px_2px_0px_#0A0A0A] z-30 text-[9px] sm:text-[10px] font-mono font-bold text-[#0A0A0A] whitespace-nowrap rotate-2">
                 2 · Focus
               </div>
-              <div class="w-26 sm:w-32 overflow-hidden rounded-[18px] sm:rounded-[22px] border-2 border-[#0A0A0A] shadow-brutal-sm bg-white">
+              <div class="w-full overflow-hidden rounded-[16px] sm:rounded-[20px] border-2 border-[#0A0A0A] shadow-brutal-sm bg-white">
                 <img src="./assets/focus_space/screen_crop_2.png" alt="Focus Space - Focus with Pomodoro" class="w-full h-auto block" loading="lazy">
               </div>
             </div>
@@ -498,18 +498,18 @@
           <div class="relative flex items-center justify-center pt-2 pb-1">
             
             <!-- PHONE 1: STEP 1 DIGITAL RECEIPT VAULT -->
-            <div class="relative z-10 shrink-0">
-              <div class="absolute -top-3 -left-1 sm:-left-2 bg-white border border-[#0A0A0A] sm:border-2 rounded-md px-2 py-0.5 shadow-[2px_2px_0px_#0A0A0A] z-30 text-[9px] sm:text-[10px] font-mono font-bold text-[#0A0A0A] whitespace-nowrap -rotate-2">
+            <div class="relative z-10 shrink-0 w-[100px] sm:w-28 md:w-32">
+              <div class="absolute -top-3 -left-1 sm:-left-2 bg-white border border-[#0A0A0A] sm:border-2 rounded-md px-1.5 sm:px-2 py-0.5 shadow-[2px_2px_0px_#0A0A0A] z-30 text-[9px] sm:text-[10px] font-mono font-bold text-[#0A0A0A] whitespace-nowrap -rotate-2">
                 1 · Vault
               </div>
-              <div class="w-26 sm:w-32 overflow-hidden rounded-[18px] sm:rounded-[22px] border-2 border-[#0A0A0A] shadow-brutal-sm bg-white">
+              <div class="w-full overflow-hidden rounded-[16px] sm:rounded-[20px] border-2 border-[#0A0A0A] shadow-brutal-sm bg-white">
                 <img src="./assets/toss/crop_vault.png" alt="Toss - Digital Receipt Vault" class="w-full h-auto block" loading="lazy">
               </div>
             </div>
 
             <!-- SUBTLE CONNECTING ARROW -->
-            <div class="relative z-20 mx-[-6px] sm:mx-[-8px] shrink-0 pointer-events-none">
-              <svg class="w-12 h-10 sm:w-14 sm:h-12" viewBox="0 0 140 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="relative z-20 mx-[-4px] sm:mx-[-6px] shrink-0 pointer-events-none">
+              <svg class="w-8 h-7 sm:w-12 sm:h-10" viewBox="0 0 140 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M 15 55 C 40 58, 60 75, 68 45 C 75 15, 52 22, 64 68 C 72 98, 105 68, 130 52" 
                       stroke="#0A0A0A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M 120 45 L 132 52 L 122 62" 
@@ -518,11 +518,11 @@
             </div>
 
             <!-- PHONE 2: STEP 2 RETURN BARCODE & DETAILS -->
-            <div class="relative z-10 shrink-0">
-              <div class="absolute -top-3 -right-1 sm:-right-2 bg-white border border-[#0A0A0A] sm:border-2 rounded-md px-2 py-0.5 shadow-[2px_2px_0px_#0A0A0A] z-30 text-[9px] sm:text-[10px] font-mono font-bold text-[#0A0A0A] whitespace-nowrap rotate-2">
+            <div class="relative z-10 shrink-0 w-[100px] sm:w-28 md:w-32">
+              <div class="absolute -top-3 -right-1 sm:-right-2 bg-white border border-[#0A0A0A] sm:border-2 rounded-md px-1.5 sm:px-2 py-0.5 shadow-[2px_2px_0px_#0A0A0A] z-30 text-[9px] sm:text-[10px] font-mono font-bold text-[#0A0A0A] whitespace-nowrap rotate-2">
                 2 · Barcode
               </div>
-              <div class="w-26 sm:w-32 overflow-hidden rounded-[18px] sm:rounded-[22px] border-2 border-[#0A0A0A] shadow-brutal-sm bg-white">
+              <div class="w-full overflow-hidden rounded-[16px] sm:rounded-[20px] border-2 border-[#0A0A0A] shadow-brutal-sm bg-white">
                 <img src="./assets/toss/crop_details.png" alt="Toss - Return Barcode & Receipt Details" class="w-full h-auto block" loading="lazy">
               </div>
             </div>
